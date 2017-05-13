@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 10:58:23 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Mindvalley. We incubate and grow businesses that innovate on transformational education, dedicated to unleashing humanity's greatest potential." /><meta property="og:title" content="Mindvalley: Be Extraordinary" />
+    <meta property="og:type" content="website" />
+    <meta name="author" content="Denys Loveiko">
+    <meta property="og:site_name" content="Mindvalley" />
+    <meta property="og:image" content="index.html" />
+    <meta property="og:description" content="Welcome to Mindvalley. We incubate and grow businesses that innovate on transformational education, dedicated to unleashing humanity's greatest potential." />
+    <meta property="og:url" content="index.html" />
+    <meta property="fb:app_id" content="260105907385613" /> 
+
+    <title>Welcome to Mindvalley</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/page.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/queries.css" />
+    
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+    <link rel="manifest" href="imgs/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+ 
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/page.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+
+            
+            
+            var intro_overlay = $('.overlay'),  
+                explore_block = $(".explore-block"),
+                explore_arrow = $('.arrow-explore'),
+                title_cta = $('.CoverTitles-cta'),
+                title_line = $('.CoverSubtitle-line'),
+                title_txt_cta = $('.CoverTitles-cta-text'),
+                core = $('#core'),
+                go_next = $('#arrow-next'),
+                go_prev = $('#arrow-prev'),
+                scroll = $('.scroll-sign'),
+                desc_text = $('.decsription-short-text'),
+                logo_body = $('.logo-body'),
+                preload = $('#preloader'),
+                blackout = $('.overlay-black'),
+                social = $('ul.social'),
+                fb = $('#fb'),
+                twitter = $('#twitter'),
+                insta = $('#insta'),
+                youtube = $('#youtube'),
+                teleport = $('.overlay-translate'),
+                burger_icon = $('#nav-icon1'),
+                accordion = $('.accordion'),
+                menu_category = $('.link'),
+                menu_list = $('.submenu li'),
+                menu_page = $('.accordion .link'),
+                video = $('.video'),
+                section = $('.section-img');
+            
+            
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){
+                preload.addClass('active-preload');
+                preload.delay(300).fadeOut(300);
+            }, 1400);
+            
+            setTimeout(function(){ 
+                intro_overlay.addClass('overlay-active');
+            }, 1650);
+            
+            setTimeout(function(){
+                blackout.fadeOut(900);
+                explore_arrow.addClass('arrow-explore-active');
+            }, 1800);
+            
+            setTimeout(function(){
+                title_line.addClass('active-line');
+                title_txt_cta.addClass('active-cta');
+                desc_text.addClass('decsription-short-text-active');                    
+                explore_arrow.removeClass('arrow-explore-active');
+                blackout.fadeOut(400);
+            }, 2200);
+            
+            
+            /*
+			* Explore button intialization
+			*/
+            
+                $(function() {
+	               var Accordion = function(el, multiple) {
+		           this.el = el || {};
+		           this.multiple = multiple || false;
+
+		          // Variables privadas
+		          var links = this.el.find('.link');
+		          // Evento
+		          links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+                  }
+
+	           Accordion.prototype.dropdown = function(e) {
+		          var $el = e.data.el;
+			      $this = $(this),
+			      $next = $this.next();
+
+		          $next.slideToggle();
+		          $this.parent().toggleClass('open');
+
+		          if (!e.data.multiple) {
+			         $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		          };
+	           }	
+
+	               var accordion = new Accordion($('#accordion'), false);
+              });
+    
+   /* Burger Menu Icon */ 
+  
+             burger_icon.click(function(){
+		          $(this).toggleClass('open');
+                    accordion.toggleClass('accordion-active');
+     
+	         });
+    
+             menu_list.click(function(){
+		         burger_icon.toggleClass('open');
+                 setTimeout(function(){
+                    accordion.toggleClass('accordion-active');
+                 }, 1000);
+	         });
+            
+    /* Explore block */ 
+            
+                explore_block.mouseenter(function(){
+                    explore_arrow.addClass('arrow-explore-hover');
+                    title_cta.addClass('CoverTitles-cta-hover');
+                    title_line.addClass('hover-line');
+                });
+            
+                explore_block.mouseleave(function(){
+                    explore_arrow.removeClass('arrow-explore-hover');
+                    title_cta.removeClass('CoverTitles-cta-hover');
+                    title_line.removeClass('hover-line');
+                });
+                   
+    /* Prev Next buttons */ 
+            
+                go_next.click(function(){
+                    $.fn.fullpage.moveSectionDown();
+                });
+    
+                go_prev.click(function(){
+                    $.fn.fullpage.moveSectionUp();
+                });
+            
+    /* Transition */ 
+            
+            $('a.arrow-explore').find('a').click(function(e){
+                redirect = this.getAttribute('href');
+                e.preventDefault();
+                $('body').fadeOut(600, function(){
+                    document.location.href = redirect
+                });
+            });
+            
+            
+            /*
+			* Particles
+			*/   
+            
+ particlesJS("particles-js",{particles:{number:{value:80,density:{enable:!0,value_area:1200}},color:{value:["#aa73ff","#f8c210","#83d238","#33b1f8"]},shape:{type:"circle",stroke:{width:0,color:"#fff"},polygon:{nb_sides:5},image:{src:"",width:100,height:100}},opacity:{value:1,random:!1,anim:{enable:!1,speed:.5,opacity_min:.1,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:20,size_min:.3,sync:!1}},line_linked:{enable:!0,distance:120,color:"#919191",opacity:.4,width:1}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"grab"},onclick:{enable:!1},resize:!0},modes:{grab:{distance:140,line_linked:{opacity:1}},bubble:{distance:400,size:40,duration:2,opacity:8,speed:1},repulse:{distance:200,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!0});
+            
+
+    
+            /*
+			 * Core
+			 */   
+            
+			$('#core').fullpage({
+                sectionsColor: ['#333', '#333', '#333', '#333', '#333'],
+				anchors: ['about', 'culture', 'vishen', 'book', 'team'],
+                scrollingSpeed: 700,
+                menu: '.submenu',
+                
+                
+                afterRender: function(){
+					video.get(0).play();
+                    go_next.addClass('opacity-zero');
+                    go_prev.addClass('opacity-zero');
+				},
+                
+                afterLoad: function(anchorLink, index){
+                    desc_text.addClass('decsription-short-text-active');
+                    explore_block.css({"transform": "translate3d(0px, 0px, 0px)", "opacity": "1"});
+        
+                    setTimeout(function(){ 
+                        social.css({"transform": "translate3d(0px, 0px, 0px)", "opacity": "1"});
+                    }, 200);
+                    
+                    if(index == 1){
+                        explore_arrow.addClass('arrow-explore-first');
+                        go_next.addClass('opacity-zero');
+                        go_prev.addClass('opacity-zero');
+                        scroll.text('Scroll Down').removeClass('opacity-zero');
+                    }
+                    
+                    else if (index !== 1) {
+                        explore_arrow.removeClass('arrow-explore-first');
+                        scroll.addClass('opacity-zero');
+                        go_next.removeClass('opacity-zero');
+                        go_prev.removeClass('opacity-zero');
+                    }
+                    
+                    if(index == 2){
+                    }
+                    
+                    if(index == 3){
+                    }
+                    
+                    if(index == 4){
+                    }
+                    
+                    if(index == 5){
+                        go_next.addClass('opacity-zero');
+                        go_prev.addClass('opacity-zero');
+                        scroll.text('Scroll Up').removeClass('opacity-zero');
+                    }
+                },
+                
+                onLeave: function(index, nextIndex, direction){
+                    desc_text.removeClass('decsription-short-text-active');
+                    explore_block.css({"transform": "translate3d(0px, 30px, 0px)", "opacity": "0"});
+                    social.css({"transform": "translate3d(0px, 20px, 0px)", "opacity": "0"});
+                }
+
+                
+			});
+            
+            
+            
+        });
+    </script>
+
+</head>
+<body>
+    
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PTCF63"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PTCF63');</script>
+    
+    
+    
+    <a href="index-2.html" class="logo-body orange"></a>
+    <a href="http://home.mindvalley.com/" class="login">Login</a>
+
+<div id="nav-icon1">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+    
+	<!-- Contenedor -->
+	<ul id="accordion" class="accordion">
+        
+        <div id="particles-js"></div>
+
+		<li class="default open">
+			<div class="link home"><i class="fa fa-paint-brush"></i>Home<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li data-menuanchor="about"><a href="#about">About</a></li>
+				<li data-menuanchor="culture"><a href="#culture">Culture</a></li>
+				<li data-menuanchor="vishen"><a href="#vishen">Vishen</a></li>
+				<li data-menuanchor="book"><a href="#book">The Book</a></li>
+                <li data-menuanchor="team"><a href="#team">The Team</a></li>
+			</ul>
+		</li>
+		<li>
+			<div class="link"><i class="fa fa-code"></i>Businesses<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a href="businesses.html#mva">Mindvalley Academy</a></li>
+				<li><a href="businesses.html#apps">Apps & Platforms</a></li>
+				<li><a href="businesses.html#events">Events</a></li>
+                <li><a href="businesses.html#international">International</a></li>
+                <li><a href="http://evercoach.com/" target="_blank">Evercoach</a></li>
+			</ul>
+		</li>
+                <li><div class="link"><i class="fa fa-globe"></i>News<i class="fa fa-chevron-down"></i></div>
+		    <ul class="submenu">
+				<li><a href="blog/index.html" target="_blank">Blog</a></li>
+			</ul>
+		</li>
+        <li><div class="link"><i class="fa fa-globe"></i>Careers<i class="fa fa-chevron-down"></i></div>
+		    <ul class="submenu">
+				<li><a href="http://careers.mindvalley.com/">Opportunities</a></li>
+			</ul>
+		</li>
+		<li><div class="link"><i class="fa fa-globe"></i>Contact<i class="fa fa-chevron-down"></i></div>
+		    <ul class="submenu">
+				<li><a href="contact.html#cs">Customer Support</a></li>
+				<li><a href="contact.html#aff">Affiliate Partnerships</a></li>
+			</ul>
+		</li>
+	</ul>
+ 
+    
+    <div class="scroll-sign">
+        Scroll Down
+    </div>
+    
+    <div class="middle-nav">
+        <button id="arrow-next">
+            <span>Next</span>
+        </button>
+              
+        <button id="arrow-prev">
+            <span>Prev</span>
+        </button>      
+    </div>
+    
+    <a class="policy" href="privacy-policy.html" target="_blank">Privacy Policy</a>
+    
+<div id="core">
+    
+    <div class="section">
+        
+        <div class="section-img" id="about-section"></div>
+        
+                    <h1>Welcome to</h1>
+                    <h2>Mindvalley</h2>
+        
+              
+    <div class="decsription-short-text">
+        <p>We design learning experiences and publish teachings by the best authors 
+            in transformational education for 3 million students worldwide.
+        </p>          
+            <ul class="social">
+                 <li style="cursor:default">Follow Us:</li>
+                 <li><a href='https://www.facebook.com/mindvalley' target="_blank" id="fb"></a></li>
+                 <li><a href='https://twitter.com/mindvalley' target="_blank" id="twitter"></a></li>
+                 <li><a href='https://www.instagram.com/mindvalley' target="_blank" id="insta"></a></li>
+                 <li><a href='https://www.youtube.com/user/mindvalley' target="_blank" id="youtube"></a></li>
+            </ul>     
+    </div>  
+        
+        <div class="explore-block">
+            <div class="CoverSubtitle-line" style="background-color:#ffce00;"></div>
+              <div class="CoverTitles-cta">
+                  <a href="about.html" class="CoverTitles-cta-text">Learn More</a>
+              </div>
+              <a href="about.html"><div class="arrow-explore"></div></a>
+        </div>
+        
+          <video autoplay loop muted class="video" poster="imgs/slides/pstr.jpg">
+			<source src="imgs/slides/intro.mp4" type="video/mp4">
+            <source src="imgs/slides/intro.webm" type="video/webm">
+            <source src="imgs/slides/intro.ogv" type="video/ogv">
+		</video>
+                
+    </div>
+    
+    
+    
+    <div class="section">
+        
+        <div class="section-img" id="culture-section"></div>
+        
+                <h1>Invest in</h1>
+                <h2>Happy</h2>
+              
+    <div class="decsription-short-text">
+        <p>Our best products are our employees – discover how our multi award-winning company culture drives our productivity and our growth.
+        </p>
+            <ul class="social">
+                 <li style="cursor:default">Follow Us:</li>
+                 <li><a href='https://www.facebook.com/mindvalley' target="_blank" id="fb"></a></li>
+                 <li><a href='https://twitter.com/mindvalley' target="_blank" id="twitter"></a></li>
+                 <li><a href='https://www.instagram.com/mindvalley' target="_blank" id="insta"></a></li>
+                 <li><a href='https://www.youtube.com/user/mindvalley' target="_blank" id="youtube"></a></li>
+            </ul>        
+    </div>  
+        
+        <div class="explore-block">
+            <div class="CoverSubtitle-line" style="background-color:#ffce00;"></div>
+              <div class="CoverTitles-cta">
+                  <a href="culture.html" class="CoverTitles-cta-text">Learn More</a>
+              </div>
+              <a href="culture.html"><div class="arrow-explore"></div></a>
+        </div>
+            
+    </div>
+    
+    <div class="section">
+        
+        <div class="section-img" id="vishen-section"></div>
+            
+             <h1>Meet</h1>
+                <h2>Vishen</h2>
+              
+    <div class="decsription-short-text">
+        <p>Get to know the CEO and Founder of Mindvalley.
+        </p>
+            <ul class="social">
+                 <li style="cursor:default">Follow Us:</li>
+                 <li><a href='https://www.facebook.com/mindvalley' target="_blank" id="fb"></a></li>
+                 <li><a href='https://twitter.com/mindvalley' target="_blank" id="twitter"></a></li>
+                 <li><a href='https://www.instagram.com/mindvalley' target="_blank" id="insta"></a></li>
+                 <li><a href='https://www.youtube.com/user/mindvalley' target="_blank" id="youtube"></a></li>
+            </ul>     
+    </div>  
+        
+        <div class="explore-block">
+            <div class="CoverSubtitle-line" style="background-color:#ffce00;"></div>
+              <div class="CoverTitles-cta">
+                  <a href="vishen.html" class="CoverTitles-cta-text">Learn More</a>
+              </div>
+              <a href="vishen.html"><div class="arrow-explore"></div></a>
+        </div>
+                
+    </div>
+    
+    <div class="section">
+        
+        <div class="section-img" id="book-section"></div>
+        
+             <h1>Discover</h1>
+                <h2>The Book</h2>
+              
+    <div class="decsription-short-text">
+        <p>A book that teaches you to question your reality and redefine life and success on your own terms.
+        </p>
+            <ul class="social">
+                 <li style="cursor:default">Follow Us:</li>
+                 <li><a href='https://www.facebook.com/mindvalley' target="_blank" id="fb"></a></li>
+                 <li><a href='https://twitter.com/mindvalley' target="_blank" id="twitter"></a></li>
+                 <li><a href='https://www.instagram.com/mindvalley' target="_blank" id="insta"></a></li>
+                 <li><a href='https://www.youtube.com/user/mindvalley' target="_blank" id="youtube"></a></li>
+            </ul>      
+    </div>  
+        
+        <div class="explore-block">
+            <div class="CoverSubtitle-line" style="background-color:#ffce00;"></div>
+              <div class="CoverTitles-cta">
+                  <a href="book.html" class="CoverTitles-cta-text">Learn More</a>
+              </div>
+              <a href="book.html"><div class="arrow-explore"></div></a>
+        </div>
+                
+    </div>
+   
+    <div class="section">
+        
+        <div class="section-img" id="team-section"></div>
+        
+            <h1>40 Nationalities</h1>
+            <h2>1 Mission</h2>
+              
+    <div class="decsription-short-text">
+        <p>Our unique recruitment policy has resulted in a diverse and international tribe, collectively dedicated to hacking education worldwide.
+        </p>
+            <ul class="social">
+                 <li style="cursor:default">Follow Us:</li>
+                 <li><a href='https://www.facebook.com/mindvalley' target="_blank" id="fb"></a></li>
+                 <li><a href='https://twitter.com/mindvalley' target="_blank" id="twitter"></a></li>
+                 <li><a href='https://www.instagram.com/mindvalley' target="_blank" id="insta"></a></li>
+                 <li><a href='https://www.youtube.com/user/mindvalley' target="_blank" id="youtube"></a></li>
+            </ul>       
+    </div>  
+        
+        <div class="explore-block">
+            <div class="CoverSubtitle-line" style="background-color:#ffce00;"></div>
+              <div class="CoverTitles-cta">
+                  <a href="team.html" class="CoverTitles-cta-text">Learn More</a>
+              </div>
+              <a href="team.html"><div class="arrow-explore"></div></a>
+        </div>
+                
+    </div>
+    
+       
+    
+</div>
+    
+    
+
+</body>
+
+<!-- Mirrored from www.mindvalley.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 10:58:23 GMT -->
+</html>
+<!-- Localized -->

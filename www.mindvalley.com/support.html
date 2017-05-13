@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/support.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:27:56 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+	<title>Contact Mindvalley</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+    <link rel="stylesheet" href="css/slider-css.css" type="text/css">
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src='js/slider.js'></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+    
+
+            wow = new WOW(
+            {
+                animateClass:'animated',
+                offset: 30
+            }
+            );
+                wow.init();
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                var preload = $('#preloader');
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(300);
+            }, 1200);
+    
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1500);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1000);
+    
+    
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="contact.html";
+                }
+                    });  
+            
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="contact.html";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-orange">Back</div>
+            
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;">
+            
+        <h1 class="intro-quote quote-text-active left">At your service.</h1>
+            
+            <p class="subheadline-text margin-30 left wow fadeInUp" data-wow-offset="0">  
+                One of the values from Mindvalley's Code of Awesomeness is "We turn our customers into raving fans". Our support agents aren't just front-liners – they're our support system.
+            </p>
+            
+            <img src="imgs/inner/wow.jpg" class="padding-left-40 img-inner margin-top-30 above wow fadeInUp">
+            
+            
+            <p class="paragraph-text smaller margin-top-30 center wow fadeInUp">
+                <i><small>The Mindvalley Customer Support Team</small></i>
+            </p>
+            
+            <h2 class="txt-orange paragraph-head left wow fadeInUp">Talk To Us</h2>
+            
+            <p class="paragraph-text margin-30 float-left left wow fadeInUp" data-wow-offset="0">
+                We know an answer today is better than one tomorrow. On <a href="https://support.mindvalleyacademy.com/" target="_blank">this support site</a>, you will find the answers to 90% of your questions (about your Mindvalley experience, that is). If you still have trouble finding an answer, feel free to drop us an email and someone from our lovely team will get back to you as soon they can.
+            </p>
+            
+            <div class="col l6 margin-top-30 wow fadeInUp">
+                
+                <img src="imgs/misc/email_icon_new.svg" class="padding-left-40 img-inner-tiny above wow fadeInUp">
+                
+                <p class="paragraph-text margin-top-15 center">
+                    <a href="https://support.mindvalleyacademy.com/email/" target="_blank">Connect with our customer support rockstars</a> and get immediate help (Monday – Friday, 7:00am – 7:00pm PST).
+                </p>
+            </div>
+        
+            <div class="col l6 margin-top-30 wow fadeInUp" data-wow-delay=".25s">
+                
+                <img src="imgs/misc/phone_icon_new.svg" class="padding-left-40 img-inner-tiny above wow fadeInUp">
+                
+                <p class="paragraph-text margin-top-15 center">
+                    <a href="https://support.mindvalleyacademy.com/email/" target="_blank">Submit an email</a> anytime, and we’ll get back to you ASAP.
+                </p>
+            </div>
+            
+            
+<!--            
+            <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Get In Touch</h2>
+            
+            <p class="paragraph-text margin-top-30 left wow fadeInUp" data-wow-offset="0">   
+                <a href="http://support.mindvalley.com/#_contact" target="_blank">Chat with our customer support rockstars </a>.<br>
+                Prefer to speak to someone? Our call centre team is available at:<br>  
+                1-(888)-597-8384 <br>
+                7am-7pm PST<br>
+                Mondays - Fridays<br>
+                You can also check out our <a href="http://support.mindvalley.com/" target="_blank">FAQ</a> page to find out more about your orders and purchases.
+            </p>
+
+            
+        <p class="subheadline-text margin-top-30 left wow fadeInUp" data-wow-offset="0">            
+            <b>A-29-13, Menara UOA Bangsar, 5 Jalan Bangsar Utama 1, 59000 Kuala Lumpur, Malaysia</b>
+        </p>
+            
+            
+
+            
+<div id="googleMap"></div>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(3.1282238,101.67850010000006);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  scrollwheel:false,
+  draggable:true,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+            
+ -->
+            
+            
+                  
+                   
+           <p class="paragraph-text txt-white margin-30 float-left left">.</p>
+
+           
+           </div>
+        </div>
+        
+        
+        
+        	<script>
+		window.sliderInit = (function (window, document, undefined) {
+
+			'use strict';
+
+			// Feature Test
+			if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+
+				// SELECTORS
+				var sliders = document.querySelectorAll('[data-slider]');
+				var mySwipe = Array;
+
+
+				// EVENTS, LISTENERS, AND INITS
+
+				// Add class to HTML element to activate conditional CSS
+				document.documentElement.className += ' js-slider';
+
+				// Activate all sliders
+				Array.prototype.forEach.call(sliders, function (slider, index) {
+
+					// SELECTORS
+
+					var slideCount = slider.querySelector('[data-slider-count]'); // Slider count wrapper
+					var slideNav = slider.querySelector('[data-slider-nav]'); // Slider nav wrapper
+
+
+					// METHODS
+
+					// Display count of slides
+					var createSlideCount = function () {
+						// Variables
+						var slideTotal = mySwipe[index].getNumSlides();
+						var slideCurrent = mySwipe[index].getPos();
+
+						// Content
+						if ( slideCount !== null ) {
+							slideCount.innerHTML = slideCurrent + ' of ' + slideTotal;
+						}
+					};
+
+					// Display Slider navigation
+					var createNavButtons = function () {
+						if ( slideNav !== null ) {
+							slideNav.innerHTML = '<a data-slider-nav-prev href="#">Previous</a> | <a data-slider-nav-next href="#">Next</a>';
+						}
+					};
+
+					// Stop YouTube and Vimeo videos from playing when leaving the slide
+					var stopVideo = function () {
+						var currentSlide = mySwipe[index].getPos() - 1;
+						var iframe = slider.querySelector( '[data-index="' + currentSlide + '"] iframe');
+						var video = slider.querySelector( '[data-index="' + currentSlide + '"] video' );
+						if ( iframe !== null ) {
+							var iframeSrc = iframe.src;
+							iframe.src = iframeSrc;
+						}
+						if ( video !== null ) {
+							video.pause();
+						}
+					};
+
+					// Handle next button
+					var handleNextBtn = function (event) {
+						event.preventDefault();
+						stopVideo();
+						mySwipe[index].next();
+					};
+
+					// Handle previous button
+					var handlePrevBtn = function (event) {
+						event.preventDefault();
+						stopVideo();
+						mySwipe[index].prev();
+					};
+
+					// Handle keypress
+					var handleKeypress = function (event) {
+						if ( event.keyCode == 37 ) {
+							mySwipe[index].prev();
+						}
+						if ( event.keyCode == 39) {
+							mySwipe[index].next();
+						}
+					};
+
+
+					// EVENTS, LISTENERS, AND INITS
+
+					// Activate Slider
+					mySwipe[index] = Swipe(slider, {
+						speed: 800,
+						auto: 3000,
+						continuous: true,
+						callback: function(index, elem) {
+							createSlideCount(); // Update with new position on slide change
+						}
+					});
+
+					// Create slide count and nav
+					createSlideCount();
+					createNavButtons();
+					var btnNext = slider.querySelector('[data-slider-nav-next]'); // Next slide button
+					var btnPrev = slider.querySelector('[data-slider-nav-prev]'); // Previous slide button
+
+					// Toggle Previous & Next Buttons
+					if ( btnNext ) {
+						btnNext.addEventListener('click', handleNextBtn, false);
+					}
+					if ( btnPrev ) {
+						btnPrev.addEventListener('click', handlePrevBtn, false);
+					}
+
+					// Toggle Left & Right Keypress
+					window.addEventListener('keydown', handleKeypress, false);
+
+				});
+
+			}
+
+		})(window, document);
+	</script>
+
+        
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/support.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:28:15 GMT -->
+</html>

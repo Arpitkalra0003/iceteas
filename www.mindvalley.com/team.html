@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:10:24 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<title>Mindvalley - The Team</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+                    
+        
+    
+            wow = new WOW(
+            {
+                animateClass:'animated',
+                offset: 30
+            }
+            );
+                wow.init();
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(500);
+            }, 1000);
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1300);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1000);
+
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html#team";
+                }
+                    });  
+    
+    
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html#team";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-orange">Back</div>
+            
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+       <div class="row container" style="max-width:1430px;">
+             <div class="col l2 m1">.</div>
+                <div class="col l8 m10 s12" style="max-width:900px;"> 
+                    
+                    
+           <h1 class="intro-quote quote-text-active left">The Mindvalley Team.</h1> 
+                    
+            <p class="subheadline-text margin-top-30 left wow fadeInUp">
+                Mindvalley runs a unique recruitment campaign – resulting in a team of 200 extraordinary players and bright minds from almost 40 different nations, all of whom celebrate and contribute to our company culture, and collectively work towards a mutual goal and purpose.<br><br>
+                Meet some of us below.
+            </p>
+                    
+            <img src="imgs/MV_Team.jpg" class="padding-left-40 img-inner margin-top-50 above">
+
+           
+        <h2 class="txt-orange paragraph-head margin-top-50 float-none left wow fadeInUp">Executive Board</h2>         
+           
+                    <div class="row padding-left-40">
+                    
+<div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/vishen.jpg" style="width:100%">
+    <h2 class="left">Vishen Lakhiani</h2> 
+    <p class="left">Founder and CEO</p>
+</div>
+    
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".15s">
+<img src="imgs/team/ajit.jpg" style="width:100%">
+    <h2 class="left">Ajit Nawalkha</h2> 
+    <p class="left">Senior Partner, Strategy</p>
+</div>
+           
+<div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/kristina.jpg" style="width:100%">
+    <h2 class="left">Kristina Mänd-Lakhiani</h2> 
+    <p class="left">Co-Founder and Host of Mindvalley Russian</p>
+</div>
+           
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".15s">
+<img src="imgs/team/ezekiel.jpg" style="width:100%">
+    <h2 class="left">Ezekiel Vicente</h2> 
+    <p class="left">Senior Partner, Technology</p>
+</div>
+  
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".3s">
+<img src="imgs/team/kshitij.jpg" style="width:100%">
+    <h2 class="left">Kshitij Minglani</h2> 
+    <p class="left">Interim CFO</p>
+</div>
+           
+<div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/gareth.jpg" style="width:100%">
+    <h2 class="left">Gareth Davies</h2> 
+    <p class="left">Technology</p>
+</div> 
+                        
+                    </div>
+                    
+<h2 class="txt-orange paragraph-head float-none left wow fadeInUp">Business Leads</h2> 
+                   
+                    <div class="row padding-left-40">
+
+                        
+<div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/sid.jpg" style="width:100%">
+    <h2>Siddharth Anantharam</h2> 
+    <p>Manager, Extraordinary Living</p>
+</div> 
+                        
+<div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/eric.jpg" style="width:100%">
+    <h2>Eric Strauss</h2> 
+    <p>General Manager, Mindvalley Media</p>
+</div>
+         
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".15s">
+<img src="imgs/team/klemen.jpg" style="width:100%">
+    <h2>Klemen Struc</h2> 
+    <p>Manager, Mindvalley Academy</p>
+</div>
+                        
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".3s" style="clear:both;">
+<img src="imgs/team/kadi.jpg" style="width:100%">
+    <h2>Kadi Oja</h2> 
+    <p>Manager, Mindvalley Events</p>
+</div>
+                        
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".15s">
+<img src="imgs/team/diana.jpg" style="width:100%">
+    <h2>Diana Costa</h2> 
+    <p>Manager, Soulvana</p>
+</div>
+                        
+                        
+                    </div>
+                    
+                    
+<h2 class="txt-orange paragraph-head float-none left wow fadeInUp">Academy Hosts</h2> 
+                   
+                    <div class="row padding-left-40">
+                    
+<div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/cecilia.jpg" style="width:100%">
+    <h2>Cecilia Sardeo</h2> 
+    <p>Co-Founder of Mindvalley Italy and Host of Zenward</p>
+</div>
+                        
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".3s">
+<img src="imgs/team/asha.jpg" style="width:100%">
+    <h2>Asha Gill</h2> 
+    <p>Host of Soulvana</p>
+</div>
+                        
+ <div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/jason.jpg" style="width:100%">
+    <h2>Jason Campbell</h2> 
+    <p>Host of Impact Academy</p>
+</div>
+         
+                    </div>
+                    
+                                        
+<h2 class="txt-orange paragraph-head float-none left wow fadeInUp">Communications</h2> 
+                   
+                    <div class="row padding-left-40">
+                    
+<div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/brett.jpg" style="width:100%">
+    <h2>Brett Harding</h2> 
+    <p>Customer Support</p>
+    <a href="mailto:support@mindvalley.com">support@mindvalley.com</a>
+</div>
+                        
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".15s">
+<img src="imgs/team/ariel.jpg" style="width:100%">
+    <h2>Ariel Lenia Sit</h2> 
+    <p>Public Relations & Partnerships</p>
+    <a href="mailto:media@mindvalley.com">media@mindvalley.com</a>
+</div>
+                        
+<div class="team-card col m4 l4 s12 wow fadeInUp" data-wow-delay=".3s">
+<img src="imgs/team/marta.jpg" style="width:100%">
+    <h2>Marta Kondryn</h2> 
+    <p>Careers</p>
+    <a href="mailto:careers@mindvalley.com">careers@mindvalley.com</a>
+</div>
+                        
+ <div class="team-card col m4 l4 s12 wow fadeInUp" style="clear:both;">
+<img src="imgs/team/luxanne.jpg" style="width:100%">
+    <h2>Lu Xanne Boon</h2> 
+    <p>Company Culture</p>
+    <a href="mailto:culture@mindvalley.com">culture@mindvalley.com</a>
+</div>
+                        
+<div class="team-card col m4 l4 s12 wow fadeInUp">
+<img src="imgs/team/ainur.jpg" style="width:100%">
+    <h2>Ainura Yermagambetova</h2> 
+    <p>Affiliate Marketing</p>
+    <a href="mailto:jvpartners@mindvalley.com">jvpartners@mindvalley.com</a>
+</div>
+         
+                    </div>
+           
+           <p class="paragraph-text txt-white margin-30 float-left left">.</p>
+
+    
+           </div>
+
+        </div>
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:11:22 GMT -->
+</html>

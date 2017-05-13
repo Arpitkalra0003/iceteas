@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/planet-first by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 15:08:21 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+	<title>Planet First</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+    <link rel="stylesheet" href="css/slider-css.css" type="text/css">
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src='js/slider.js'></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+    
+
+            wow = new WOW(
+            {
+                animateClass:'animated',
+                offset: 30
+            }
+            );
+                wow.init();
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                var preload = $('#preloader');
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(300);
+            }, 1200);
+    
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1500);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1000);
+    
+    
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="businesses.html#events";
+                }
+                    });  
+            
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="businesses.html#events";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-orange">Back</div>
+            
+        
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+        
+        
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;">
+            
+        <h1 class="intro-quote quote-text-active left">When we say we put the planet first, we mean it</h1>
+                        
+            <p class="paragraph-text left wow fadeInUp">                 
+            On our list of priorities, the planet comes first. Next up is our customers, and then our employees. Profits come last. That’s why we’re always looking for high-impact ways to contribute and disrupt the status quo. Mindvalley style.
+            </p>
+
+            <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            We fund and volunteer our time with a diverse group of international and grassroots charities who share the same vision as us: to empower people and communities to change the world in their own unique ways.</p>
+
+            <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Here are some of the things we’ve been up to:</p>
+
+           
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Giving back with Awesomeness Fest</h2>
+            
+           <iframe width="900" height="480" src="https://www.youtube.com/embed/7hzze3gNFH4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  class="padding-left-40 above video-inner aff-video-left wow fadeInUp" style="z-index:10;">
+           </iframe>
+
+            <p class="paragraph-text margin-top-30 left wow fadeInUp">
+                From 2011 onwards, we’re donating 100% of ticket sale and donation profits from our flagship annual event, Awesomeness Fest, to a handpicked group of charities and NGOs.
+            </p>
+
+            <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Awesomeness Fest is an event that brings together people who are driven to change the world. Every year our tribe, made up of entrepreneurs, authors, speakers, artists and philanthropists, gets together on a paradise island to learn, connect, have fun and share the most impactful ways to give back.</p>
+
+            <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            So far, we’ve supported these beneficiaries:</p>
+            
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp"><b>1. GiveLove.org</b></p>
+            
+        <p class="paragraph-text float-left left wow fadeInUp">
+            For Awesomeness Fest 2012 in Mexico, we partnered with award-winning actress and philanthropist Patricia Arquette and the charity that she co-founded, GiveLove.org.
+        </p> 
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            The organization is dedicated to improving global sanitation efforts which in turn improves public health, reduces child mortality and helps in finding sustainable environmental solutions.</p>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Through Awesomeness Fest we were able to donate more than $25,000 to the charity to further help its program and support its mission. This donation is directly supporting programs that will provide 4,000 Haitian children and adults with clean toilets. GiveLove.org is also teaching people how to convert human organic waste into valuable compost. The donation will help to keep this skills training capacity alive in Haiti.</p>
+
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp"><b>2. The Pachamama Alliance</b></p>
+            
+        <p class="paragraph-text float-left left wow fadeInUp">
+           Led by award-winning philanthropist <a href="http://www.soulofmoney.org/about/about-lynne-twist/" target="_blank">Lynne Twist</a>, <a href="http://www.pachamama.org/" target="_blank">the Pachamama Alliance</a> strives to preserve over 8 million acres of Amazonian rainforest in Ecuador. They do this by working closely with the indigenous Achuar tribe, empowering them to preserve their own land and culture. Using this strategy they’ve saved millions of acres of rainforest, and successfully lobbied the Ecuadorian government to become the first country in the world to add a Right of Nature to their constitution.
+        </p> 
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            We’ve joined Lynne on missions into the rainforest to engage with its people, and we’re deeply inspired by her vision and resourcefulness for this incredibly important cause.</p>
+
+
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp"><b>3. Shine on Sierra Leone</b></p>
+            
+        <p class="paragraph-text float-left left wow fadeInUp">
+           <a href="http://www.shineonsierraleone.org/" target="_blank">Shine on Sierra Leone</a> is an organization led by United Nations Woman of the World <a href="http://www.huffingtonpost.com/tiffany-persons/" target="_blank">Tiffany Persons</a>. Their mission is to introduce groundbreaking education, healthcare, micro-financing, sustainable building and agriculture programs to communities in Sierra Leone.
+        </p> 
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            In just 5 years they’ve helped local women set up 3,500 businesses, trained 6,000 people to be computer literate, and built 3 community buildings using the groundbreaking <a href="http://www.earthbagbuilding.com/" target="_blank">Earthbag Technique</a> that dramatically reduces building costs while improving structural longevity. Tiffany’s moto is “we are all meant to shine, thrive, evolve,” and we couldn’t agree more.</p>
+
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Project Renaissance</h2>
+            
+        <p class="paragraph-text float-left left wow fadeInUp">
+           Mindvalley recently launched Project Renaissance, an initiative to provide an effective platform for local talents in Malaysia and inspire new startups and movements in tech and creative fields.
+        </p> 
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+           Mindvalley is aiming to turn Kuala Lumpur into one of the world’s Top 20 places in the world to start a dot com business in the next 10 years using “tribe building”. This means bringing Malaysia’s best and brightest together to learn, share, network and collaborate on projects that push local individuals and businesses forward.
+        </p> 
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+           This idea was sparked when we decided to democratize our office space by offering our Hall of Awesomeness rent-free to local meetups that brought together enthusiasts, technologists and entrepreneurs. In over two years, we’ve had about 200 meetups with over 10,000 participants in our office!
+        </p> 
+
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Empowering Kenyan communities</h2>
+            
+           <iframe width="900" height="480" src="https://www.youtube.com/embed/P6tLdaXxZr8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  class="padding-left-40 above video-inner aff-video-left wow fadeInUp" style="z-index:10;">
+           </iframe>
+
+            <p class="paragraph-text margin-top-30 left wow fadeInUp">
+                We’re in love with <a href="http://unstoppablefoundation.org/" target="_blank">The Unstoppable Foundation</a> and its founder <a href="http://unstoppablefoundation.org/about-us" target="_blank">Cynthia Kersey</a>. Since 1999, they’ve raised over $1 million to build homes and schools in Kenyan communities.
+            </p>
+
+            <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            When we visited one of these communities with Cynthia, the smiling faces that greeted us spoke volumes for this organization’s impact. They’ve given women a new sense of purpose. Helped kids move towards their dreams of becoming doctors and engineers. Reinvigorated communities with the promise of a better future.</p>
+
+            <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            We’re supporting the Unstoppable Foundation through regular donations.</p>
+
+
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Creating a Happy Space for Burmese refugees</h2>
+            
+           <iframe width="900" height="480" src="https://www.youtube.com/embed/SC3z65DpfFA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  class="padding-left-40 above video-inner aff-video-left wow fadeInUp" style="z-index:10;">
+           </iframe>
+
+            <p class="paragraph-text margin-top-30 left wow fadeInUp">
+                We believe it’s awesome when our own employees take the initiative to give back–and that’s exactly what happened when we founded Creating a Happy Space, a volunteer group that works with Burmese refugees in Kuala Lumpur.
+            </p>
+
+            <p class="paragraph-text margin-30 float-left left wow fadeInUp">
+            Like its name suggests, Creating a Happy Space is all about giving these refugee children a space to play, learn, laugh, and be happy. Since 2008 they’ve organized a variety of activities and art workshops at our HQ. Today, we’re happy to continue our efforts by contributing funds and resources to keep the initiative going.</p>
+
+           </div>
+        </div>
+        
+        
+        
+        	<script>
+		window.sliderInit = (function (window, document, undefined) {
+
+			'use strict';
+
+			// Feature Test
+			if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+
+				// SELECTORS
+				var sliders = document.querySelectorAll('[data-slider]');
+				var mySwipe = Array;
+
+
+				// EVENTS, LISTENERS, AND INITS
+
+				// Add class to HTML element to activate conditional CSS
+				document.documentElement.className += ' js-slider';
+
+				// Activate all sliders
+				Array.prototype.forEach.call(sliders, function (slider, index) {
+
+					// SELECTORS
+
+					var slideCount = slider.querySelector('[data-slider-count]'); // Slider count wrapper
+					var slideNav = slider.querySelector('[data-slider-nav]'); // Slider nav wrapper
+
+
+					// METHODS
+
+					// Display count of slides
+					var createSlideCount = function () {
+						// Variables
+						var slideTotal = mySwipe[index].getNumSlides();
+						var slideCurrent = mySwipe[index].getPos();
+
+						// Content
+						if ( slideCount !== null ) {
+							slideCount.innerHTML = slideCurrent + ' of ' + slideTotal;
+						}
+					};
+
+					// Display Slider navigation
+					var createNavButtons = function () {
+						if ( slideNav !== null ) {
+							slideNav.innerHTML = '<a data-slider-nav-prev href="#">Previous</a> | <a data-slider-nav-next href="#">Next</a>';
+						}
+					};
+
+					// Stop YouTube and Vimeo videos from playing when leaving the slide
+					var stopVideo = function () {
+						var currentSlide = mySwipe[index].getPos() - 1;
+						var iframe = slider.querySelector( '[data-index="' + currentSlide + '"] iframe');
+						var video = slider.querySelector( '[data-index="' + currentSlide + '"] video' );
+						if ( iframe !== null ) {
+							var iframeSrc = iframe.src;
+							iframe.src = iframeSrc;
+						}
+						if ( video !== null ) {
+							video.pause();
+						}
+					};
+
+					// Handle next button
+					var handleNextBtn = function (event) {
+						event.preventDefault();
+						stopVideo();
+						mySwipe[index].next();
+					};
+
+					// Handle previous button
+					var handlePrevBtn = function (event) {
+						event.preventDefault();
+						stopVideo();
+						mySwipe[index].prev();
+					};
+
+					// Handle keypress
+					var handleKeypress = function (event) {
+						if ( event.keyCode == 37 ) {
+							mySwipe[index].prev();
+						}
+						if ( event.keyCode == 39) {
+							mySwipe[index].next();
+						}
+					};
+
+
+					// EVENTS, LISTENERS, AND INITS
+
+					// Activate Slider
+					mySwipe[index] = Swipe(slider, {
+						speed: 800,
+						auto: 3000,
+						continuous: true,
+						callback: function(index, elem) {
+							createSlideCount(); // Update with new position on slide change
+						}
+					});
+
+					// Create slide count and nav
+					createSlideCount();
+					createNavButtons();
+					var btnNext = slider.querySelector('[data-slider-nav-next]'); // Next slide button
+					var btnPrev = slider.querySelector('[data-slider-nav-prev]'); // Previous slide button
+
+					// Toggle Previous & Next Buttons
+					if ( btnNext ) {
+						btnNext.addEventListener('click', handleNextBtn, false);
+					}
+					if ( btnPrev ) {
+						btnPrev.addEventListener('click', handlePrevBtn, false);
+					}
+
+					// Toggle Left & Right Keypress
+					window.addEventListener('keydown', handleKeypress, false);
+
+				});
+
+			}
+
+		})(window, document);
+	</script>
+
+        
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/planet-first by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 15:08:21 GMT -->
+</html>

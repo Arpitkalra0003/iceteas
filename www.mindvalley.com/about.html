@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:03:26 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+	<title>About Mindvalley</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+    
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                var preload = $('#preloader');
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(300);
+            }, 1200);
+    
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1000);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1500);
+    
+    
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html";
+                }
+                    });  
+    
+            
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-orange">Back</div>
+            
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;">
+            
+        <h1 class="intro-quote quote-text-active left">Be Extraordinary.</h1>              
+
+           
+        <h2 class="txt-orange paragraph-head left  ">Our Work</h2>
+            
+        <p class="paragraph-text left float-left margin-top-30  ">
+            Founded in 2003 by Vishen Lakhiani, Mindvalley is a learning experience company that publishes ideas and teachings by the best authors in personal growth, health and fitness, spirituality, productivity, mindfulness and more – <b>serving three million students, subscribers and followers worldwide.</b></p>
+            
+                <img src="imgs/mva-1600x800.jpg" class="padding-left-40 img-inner margin-30 above">
+            
+        <p class="paragraph-text left  ">
+            Through our digital education platforms, online academies, mobile apps, content platforms and live events, we give you access to <b>transformational knowledge that empowers you to expand your boundaries</b>, unleash your potential and lead an extraordinary life – on your terms.
+        </p> 
+            
+            
+         <a href="businesses.html" class="inner-link margin-top-30  " data-wipe="Explore Mindvalley Businesses">Explore Mindvalley Businesses</a>
+
+            <h1 class="quote-text margin-top-50 float-left left  ">
+                Education is the most powerful weapon which you can use to change the world.
+            </h1>
+            
+            <h3 class="quote-text right  ">– Nelson Mandela</h3>
+
+            
+        <h2 class="txt-orange paragraph-head float-left margin-30-mob left  ">Our Mission</h2>
+            
+           <iframe width="853" height="480" src="https://www.youtube.com/embed/ZgNzGQmOhSM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  class="padding-left-40 margin-30  above video-inner aff-video-left  " style="z-index:10;">
+           </iframe>               
+            
+        <p class="paragraph-text float-left left  ">
+            We are ambitiously determined to push humanity forward by empowering our audience to live healthier and happier lives, to unleash their fullest potential – to <b><i>be extraordinary</i></b>. How? Nelson Mandela affirmed it: with the most powerful tool of all – education.
+            <br><br>
+            We want to change education globally and provide innovative, holistic education for all levels – from infant learning and highschool models to all stages of adulthood. Our ultimate goal? <b>To launch a school of growth and humanity for a billion people</b>.
+        </p> 
+            
+            <h2 class="txt-orange paragraph-head margin-30 left  ">Our Team</h2>
+            
+            <img src="imgs/MV_Team.jpg" class="padding-left-40 img-inner above  ">
+            
+        <p class="paragraph-text left margin-top-30  ">
+            Mindvalley runs a unique recruitment campaign – resulting in a team of <b>200 extraordinary players and bright minds from almost 40 different nations</b>, all of whom celebrate and contribute to our company culture, and collectively work towards a mutual goal and purpose.<br><br>
+           We stand for ideas, companies and products that push humanity forward and unleash the extraordinary in everyone, with the adamant belief that we can and will impact the world.
+        </p> 
+            
+            
+         <a href="team.html" class="inner-link margin-top-30  " data-wipe="Meet the Tribe">Meet the Tribe </a>
+            
+            
+            <h2 class="txt-orange paragraph-head margin-30 left  ">Our Culture</h2>
+            
+            <img src="imgs/Meeting-in-HoA_1.jpg" class="padding-left-40 img-inner above  ">
+            
+        <p class="paragraph-text left margin-top-30  ">
+           Our unique company culture that makes Mindvalley one of the top private companies to work for today; it fuels our growth and accelerates our productivity.<br><br>
+            <b>As a business that also focuses on employee growth and happiness</b>, we inspire our team to be creative, productive, innovative, and most importantly – feel really valued as employees.
+        </p> 
+            
+        <p class="paragraph-text left margin-top-30  ">
+            We’ve won numerous accolades for this, including <a href="http://www.worldblu.com/awardee-profiles/2015.php" target="_blank">WorldBlu’s Most Democratic Workplace</a> (from 2008-2016) and a certification by Great Place to Work®.
+        </p>
+            
+            
+            <div class="team-card col m2 l2 s6 margin-30  ">
+                <img src="imgs/logos/2016_9Years.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".1s">
+                <img src="imgs/logos/GPTW-Logo-2015.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".2s">
+                <img src="imgs/logos/Forbes-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".3s">
+                <img src="imgs/logos/Inc.-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".4s">
+                <img src="imgs/logos/BBC-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".5s">
+                <img src="imgs/logos/THP-logo.png" style="width:100%" data--delay=".6s">
+            </div>
+        
+    
+            
+            <p class="paragraph-text left margin-top-30  ">
+                Our secret? Focusing on happiness, growth, abundance and cultivating our mutual mission for positive impact. Our founder, Vishen Lakhiani, explains the <a href="https://www.youtube.com/watch?v=X1dmVox38_w" target="_blank">science of hacking and transforming work culture</a> in his keynote at the 925 Festival of Work in Helsinki, Finland.<br><br>
+                How else would we be able to manage 200 world-class employees from over 40 different countries and backgrounds in one office?
+            </p>
+            
+            
+         <a href="culture.html" class="inner-link margin-top-30  " data-wipe="Our Culture">Our Culture </a>
+
+                   
+           <p class="paragraph-text margin-30 mob-none txt-white float-left left">.</p>
+
+           
+           </div>
+        </div>
+        
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:04:14 GMT -->
+</html>

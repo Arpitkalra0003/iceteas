@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/international.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:13:44 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+	<title>International</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+    
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                var preload = $('#preloader');
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(300);
+            }, 1200);
+    
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1500);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1000);
+    
+
+    
+                var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html";
+                }
+                    });  
+            
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="businesses.html#planet";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-orange">Back</div>
+            
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;">
+            
+           <h1 class="intro-quote quote-text-active left">Mindvalley Around The World.</h1>
+            
+        <p class="subheadline-text margin-top-30 left  ">
+           Exploring and investing in brands and ventures beyond our core, we're branching out to selected markets around the world to enlighten even more lives.  
+        </p> 
+        
+        
+           <h2 class="txt-orange paragraph-head margin-30 left  ">Mindvalley Russian</h2>
+            
+            
+        <p class="paragraph-text left margin-30">
+            <b>
+                Personal growth for the Russian-speaking market across Eastern Europe.
+            </b>
+        </p>
+            
+            <a href="http://www.mindvalleyrussian.com/" target="_blank">
+                <img src="imgs/MVR-1600x800.jpg" width="900" class="padding-left-40 img-inner above">
+            </a>
+            
+        <p class="paragraph-text margin-30 left  ">
+            Co-founded and hosted by Kristina Mänd-Lakhiani, Mindvalley Russian was founded in 2009, bringing our key authors and products to the Russian-speaking market and has since published 14 Russian-speaking authors, spreading mindfulness, spirituality and alternative wellbeing to a new and growing market. 
+        </p> 
+            
+        <a href="http://www.mindvalleyrussian.com/" target="_blank" class="inner-link margin-top-30  " data-wipe="Discover Mindvalley Russian">Discover Mindvalley Russian</a>
+            
+            
+             <h2 class="txt-orange paragraph-head margin-30 left  ">Mindvalley Italy</h2>
+            
+            
+        <p class="paragraph-text left margin-30  ">
+            <b>
+                Bringing the art of wellbeing to the land of art.
+            </b>
+        </p>
+            
+            <a href="http://omnama.it/" target="_blank">
+                <img src="imgs/MVI-1600x800-1.jpg" width="900" class="padding-left-40 img-inner above  ">
+            </a>
+            
+        <p class="paragraph-text margin-30 left  ">
+            Mindvalley Italy is hosted by Cecilia Sardeo, who also hosts ad co-founded our yoga academy Zenward. Operating under the name Omnama (inspired by the Hindu mantra, Om Namah Shivaya), Mindvalley Italy serves almost 200,000 followers, subscribers and customers on their platform. 
+        </p> 
+            
+        <a href="http://omnama.it/" target="_blank" class="inner-link margin-top-30  " data-wipe="Discover Mindvalley Italy">Discover Mindvalley Italy</a>
+            
+            
+            <h2 class="txt-orange paragraph-head margin-30 left  ">The Big Life</h2>
+            
+            
+        <p class="paragraph-text left margin-30  ">
+            <b>
+                Bestselling personal growth authors on the hot seat, and a host who has no qualms asking the tough questions.
+            </b>
+        </p>
+            
+            <a href="http://www.thebiglife.com/" target="_blank">
+                <img src="imgs/TBL-1600x800-2.jpg" width="900" class="padding-left-40 img-inner above  ">
+            </a>
+            
+        <p class="paragraph-text margin-30 left  ">
+            Join host Carl Harvey and A-List special guests for uncensored training on how to create your own “Big Life” — an extraordinary life filled with abundance, freedom, passion, purpose… and anything else you want. Featuring the likes of John Assaraf, Lisa Nichols, T. Harv Eker, Robert Greene and Marci Shimoff.  
+        </p> 
+            
+        <a href="http://www.thebiglife.com/" target="_blank" class="inner-link margin-top-30  " data-wipe="Discover The Big Life">Discover The Big Life</a>
+            
+           
+           <p class="paragraph-text txt-white margin-30 float-left left  ">.</p>
+
+           
+           </div>
+        </div>
+
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/international.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:14:23 GMT -->
+</html>

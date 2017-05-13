@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/culture.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:04:41 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<title>The Mindvalley Culture</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+    <link rel="stylesheet" href="css/slider-css.css" type="text/css">
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src='js/slider.js'></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+    
+    
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(500);
+            }, 1000);
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1300);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1000);
+    
+    
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html#culture";
+                }
+                    }); 
+            
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html#culture";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-orange">Back</div>
+            
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;">
+           <h1 class="intro-quote quote-text-active left">How do you inspire and unite 40 different nationalities under one mission?</h1> 
+
+        <p class="subheadline-text margin-30 left">            
+            <b>
+                A great company culture isn't just about perks and a sexy office. It is the <i>psyche</i> – the conscience of the company itself. Focusing on happiness, growth, abundance and cultivating a mutual mission makes Mindvalley one of the top companies to work for today.
+            </b>
+        </p>
+            
+            
+            <iframe width="900" height="480" src="https://www.youtube.com/embed/A3A97fU9iRg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  class="padding-left-40 above video-inner aff-video-left " style="z-index:10;">
+           </iframe>
+            
+            <p class="paragraph-text smaller center ">
+                <i><small>A behind-the-scenes look at the Mindvalley HQ in Kuala Lumpur, Malaysia</small></i>
+            </p>
+            
+            
+            <div class="team-card col m2 l2 s6 margin-30 ">
+                <img src="imgs/logos/2016_9Years.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30 " data-wow-delay=".1s">
+                <img src="imgs/logos/GPTW-Logo-2015.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30 " data-wow-delay=".2s">
+                <img src="imgs/logos/Forbes-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30 " data-wow-delay=".3s">
+                <img src="imgs/logos/Inc.-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30 " data-wow-delay=".4s">
+                <img src="imgs/logos/BBC-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30 " data-wow-delay=".5s">
+                <img src="imgs/logos/THP-logo.png" style="width:100%" data-wow-delay=".6s">
+            </div>
+            
+
+
+        <h2 class="txt-orange paragraph-head margin-30 left ">We're here because of our why</h2>
+            
+
+        <p class="paragraph-text left ">            
+        <b>The most extraordinary people in the world today don't have a career, they have a mission</b>. We're with author and TED speaker Simon Sinek on this one – people don't really care what you do, they care why you do it. At Mindvalley, we constantly remind ourselves of our company mission: to revolutionize learning experiences and education systems worldwide. 
+        <br><br> 
+        We shall moonwalk out of this bit with a piece of advice that Sir Richard Branson personally gave to our CEO, Vishen Lakhiani:
+        </p> 
+
+            
+            <img src="imgs/inner/branson.jpg" width="900" class="padding-left-40 margin-top-30 img-inner above">          
+
+
+        <h2 class="txt-orange paragraph-head margin-30 left ">We really like personality</h2>
+            
+            <p class="paragraph-text left ">
+            The Mindvalley team is made up of international talents that were hired firstly for their attitude. While we do put a high value on skills and experience, we believe that – as proven by legendary American author Zig Ziglar (of <i>Born To Win</i> and <i>Better Than Good</i>) in one of his famous company studies – a majority of the attributes that make up the perfect employee are in the attitude category. So our rule of thumb for recruitment? <b>Hire for attitude, train for skill</b>. 
+            </p>
+
+
+           <h2 class="txt-orange paragraph-head margin-30 left ">We are Brule Breakers</h2>
+            
+        <p class="paragraph-text left ">
+            <b>We have all grown up with limiting rules and beliefs to simplify our understanding of the world</b> – everything from people, love, and success to the way life works – handed down from generation to generation. <b>We call them bullshit rules, or Brules</b>. At Mindvalley, we encourage everyone to question their belief systems and redefine life, happiness and success on their own terms, by choosing ideas and values that fulfil them and rejecting the ones that limit them.
+            </p>
+
+            <iframe width="900" height="480" src="https://www.youtube.com/embed/6VJNxpSfbw4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  class="padding-left-40 above video-inner aff-video-left wow fadeInUp" style="z-index:10;">
+           </iframe>
+
+           <p class="paragraph-text smaller center ">
+               <i><small>Mindvalley CEO and Founder Vishen Lakhiani describes Brules in 60 seconds</small></i>
+            </p>
+
+            <h2 class="txt-orange paragraph-head margin-top-30 left ">We operate by a code. An awesome code. </h2>
+        <p class="paragraph-text margin-30 float-left left ">
+           <b>It's important to have strong values leading a team and a company, just as it is for an individual</b>. Mindvalley works (and lives) by the Code of Awesomeness, which enlists the 10 values we have collectively voted for – such as the importance of integrity, gratitude and taking responsibility for our words and actions. This is reflected across the board, behind decisions we make with our teams, our businesses, our authors, our partners, and our customers.
+            </p>
+
+            <img src="imgs/coa.jpg" class="padding-left-40 img-inner-quote above " data-wow-offset="0" style="z-index:5;">
+
+            <p class="paragraph-text margin-top-30 smaller center ">
+                <i><small>The Mindvalley Code of Awesomeness</small></i>
+            </p>
+
+            <h2 class="txt-orange paragraph-head margin-top-30 left ">We celebrate our awesomeness. Weekly</h2>
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp">
+            Every week, we gather the entire team for our Awesomeness Report – <b>an hour of celebrating weekly achievements, expressing gratitude, updating everyone on latest company decisions, and highlighting remarkable performances</b>. This isn't just an opportunity to celebrate, bond and keep afloat of what's happening. It also creates contagion (read on, we're getting somewhere) – just as people inherit and transmit behaviors, emotions and beliefs through social contagion, this also applies to positive influence, including innovation, ideas, praise and great results.
+            </p>
+
+            <img src="imgs/Meeting-in-HoA_1.jpg" class="padding-left-40 img-inner above wow fadeInUp" data-wow-offset="0" style="z-index:5;">
+
+            <p class="paragraph-text margin-top-30 smaller center ">
+                <i><small>The weekly A-Report at the Mindvalley Hall of Awesomeness in Kuala Lumpur, Malaysia</small></i>
+           <p/>
+
+            <h2 class="txt-orange paragraph-head margin-30 left ">Happiness is the new productivity</h2>
+        <p class="paragraph-text left wow fadeInUp">
+            It turns out that our brains are hardwired to perform at their best not when they are in a neutral state or filled with dark voices (who knew?) – but when they are actively positive, i.e. in a happy state. At Mindvalley <b>we do this through cultivating individual freedom and also strengthening social connections</b>. We promote flexible working arrangements and team engagement where people choose their working hours provided they deliver and clear it with their team. We also encourage at-work friendships through weekly social and cultural parties. 
+            </p>
+
+            <h2 class="txt-orange paragraph-head margin-30 left ">Our personal growth matters as much as our customers'.</h2>
+        <p class="paragraph-text left wow fadeInUp">
+            Leadership at Mindvalley is standing by the principle that <b>every person we lead is as brilliant as we are, as talented as we are, and has the same capacity for growth and accomplishment</b>. And so we impart the same kind of teachings and knowledge onto our employees as we promote to our customers. Everyone at Mindvalley has complete access to our portfolio of products, courses and trainings, and they decide what goes into the Mindvalley library through our quarterly Amazon book order. 
+            </p>
+
+            <h2 class="txt-orange paragraph-head margin-30 left ">We work in playgrounds</h2>
+        <p class="paragraph-text left wow fadeInUp">
+            We're not going to lie. <b>Walking into a beautiful office every morning and getting to work in a visually-stimulating environment</b> designed to detail is definitely something that we now refuse to compromise on. How can one walk away from the option of working in a Steampunk boardroom, brainstorming ideas in a "Jedi Council", answering emails from a bean bag, having coffee in set-worthy kitchens and having meetings (and taking naps) in a tree house?  
+            </p>
+            
+        <div class="slider padding-left-40 margin-top-30" data-slider>
+			<div class="slides">
+                <div><img src="imgs/inner/steam_2.jpg"></div>
+                <div><img src="imgs/inner/29th.jpg"></div>
+                <div><img src="imgs/inner/steam_1.jpg"></div>
+                <div><img src="imgs/inner/kitchen_29th.jpg"></div>
+                <div><img src="imgs/inner/29th_hoa.jpg"></div>
+                <div><img src="imgs/inner/steam_3.jpg"></div>
+                <div><img src="imgs/inner/kitchen_23a.jpg"></div>
+			</div>
+			<div class="slider-nav" data-slider-nav></div>
+			<div class="slider-count" data-slider-count></div>
+        </div>
+
+        
+            <p class="paragraph-text txt-white margin-30 float-left left">.</p>
+           
+            
+           </div>
+        </div>
+
+        
+        	<script>
+		window.sliderInit = (function (window, document, undefined) {
+
+			'use strict';
+
+			// Feature Test
+			if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+
+				// SELECTORS
+				var sliders = document.querySelectorAll('[data-slider]');
+				var mySwipe = Array;
+
+
+				// EVENTS, LISTENERS, AND INITS
+
+				// Add class to HTML element to activate conditional CSS
+				document.documentElement.className += ' js-slider';
+
+				// Activate all sliders
+				Array.prototype.forEach.call(sliders, function (slider, index) {
+
+					// SELECTORS
+
+					var slideCount = slider.querySelector('[data-slider-count]'); // Slider count wrapper
+					var slideNav = slider.querySelector('[data-slider-nav]'); // Slider nav wrapper
+
+
+					// METHODS
+
+					// Display count of slides
+					var createSlideCount = function () {
+						// Variables
+						var slideTotal = mySwipe[index].getNumSlides();
+						var slideCurrent = mySwipe[index].getPos();
+
+						// Content
+						if ( slideCount !== null ) {
+							slideCount.innerHTML = slideCurrent + ' of ' + slideTotal;
+						}
+					};
+
+					// Display Slider navigation
+					var createNavButtons = function () {
+						if ( slideNav !== null ) {
+							slideNav.innerHTML = '<a data-slider-nav-prev href="#">Previous</a> | <a data-slider-nav-next href="#">Next</a>';
+						}
+					};
+
+					// Stop YouTube and Vimeo videos from playing when leaving the slide
+					var stopVideo = function () {
+						var currentSlide = mySwipe[index].getPos() - 1;
+						var iframe = slider.querySelector( '[data-index="' + currentSlide + '"] iframe');
+						var video = slider.querySelector( '[data-index="' + currentSlide + '"] video' );
+						if ( iframe !== null ) {
+							var iframeSrc = iframe.src;
+							iframe.src = iframeSrc;
+						}
+						if ( video !== null ) {
+							video.pause();
+						}
+					};
+
+					// Handle next button
+					var handleNextBtn = function (event) {
+						event.preventDefault();
+						stopVideo();
+						mySwipe[index].next();
+					};
+
+					// Handle previous button
+					var handlePrevBtn = function (event) {
+						event.preventDefault();
+						stopVideo();
+						mySwipe[index].prev();
+					};
+
+					// Handle keypress
+					var handleKeypress = function (event) {
+						if ( event.keyCode == 37 ) {
+							mySwipe[index].prev();
+						}
+						if ( event.keyCode == 39) {
+							mySwipe[index].next();
+						}
+					};
+
+
+					// EVENTS, LISTENERS, AND INITS
+
+					// Activate Slider
+					mySwipe[index] = Swipe(slider, {
+						speed: 800,
+						auto: 3000,
+						continuous: true,
+						callback: function(index, elem) {
+							createSlideCount(); // Update with new position on slide change
+						}
+					});
+
+					// Create slide count and nav
+					createSlideCount();
+					createNavButtons();
+					var btnNext = slider.querySelector('[data-slider-nav-next]'); // Next slide button
+					var btnPrev = slider.querySelector('[data-slider-nav-prev]'); // Previous slide button
+
+					// Toggle Previous & Next Buttons
+					if ( btnNext ) {
+						btnNext.addEventListener('click', handleNextBtn, false);
+					}
+					if ( btnPrev ) {
+						btnPrev.addEventListener('click', handlePrevBtn, false);
+					}
+
+					// Toggle Left & Right Keypress
+					window.addEventListener('keydown', handleKeypress, false);
+
+				});
+
+			}
+
+		})(window, document);
+	</script>
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/culture.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:09:15 GMT -->
+</html>

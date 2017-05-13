@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/culture/love-week by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 13:49:38 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+	<title>Love Week</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="../imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="../index.html">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../index.html">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="../css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/queries.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                var preload = $('#preloader');
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(300);
+            }, 1200);
+    
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1500);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1000);
+    
+    
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="../index.html";
+                }
+                    });  
+    
+            
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="../index-2.html";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+    <style>
+
+    .stButton .stBubble .stBubble_count {
+        height: 41px;
+  }
+
+  .stMainServices{
+      height: 40px !important;
+  }
+
+    </style>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-orange">Back</div>
+            
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;">
+            
+        <h1 class="intro-quote quote-text-active left">What Happens When You Make “Love” Part Of Your Job Description For Five Days</h1>
+
+        <h2 class="txt-orange paragraph-head margin-top-30 left wow fadeInUp">Love Week 2016 | Join The Global Movement | February 8th – 12th | #SpreadLoveWeek</h2>        
+
+           
+        <p class="paragraph-text left wow fadeInUp">It all started as a ‘crazy’ tradition in Mindvalley to take on Valentine’s Day five years ago. Now it’s been turned into a global movement for companies worldwide. Get your team on board to spread the love, and watch your workplace transform.</p>
+
+        <iframe width="900" height="480" src="https://www.youtube.com/embed/UsJwmcuOCA0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  class="padding-left-40 above video-inner aff-video-left wow fadeInUp" style="z-index:10;">
+           </iframe>
+
+
+        <div class="col l12 center">
+
+
+        <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="../../w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "35270ca3-409f-43a9-b998-f330e26426e1", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+          
+            
+        <span class='st_facebook_vcount' displayText='Facebook' st_url='http://www.mindvalley.com/culture/love-week'></span>
+        <span class='st_twitter_vcount' displayText='Tweet' st_url='http://www.mindvalley.com/culture/love-week'></span>
+        <span class='st_linkedin_vcount' displayText='LinkedIn' st_url='http://www.mindvalley.com/culture/love-week'></span>
+        <!-- <span class='st_pinterest_vcount' displayText='Pinterest' st_url='http://www.mindvalley.com/culture/love-week'></span> -->
+
+        <!-- <span class='st_email_vcount' displayText='Email' st_url='http://www.mindvalley.com/goal-setting-redefined'></span> -->
+
+        </div>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">A “crazy” tradition that started in one company on Valentine’s Day four years ago is about to turn into a global movement. Get your company or business to join us. And watch how this might change your company culture in remarkable ways</p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+        Several years ago, we decided that Valentine’s Day shouldn’t just be a day for lovers – so we planned a takeover that resulted in Love Week – when everybody gets to experience some love and appreciation at the workplace. And because love and appreciation lead to happiness, it boosted our productivity dramatically.</p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+        So why shouldn’t all workplaces prioritise happiness? When you make love and care part of your company culture, you create an environment that encourages and enables employees to bond and connect with each other. Various studies have proven that friendships at work, on the contrary, boosts productivity and company growth.</p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+        Love Week takes place the week before Valentine’s, for five days of amazing giving and receiving at the office. Each person plays a secret angel and “a human” to somebody. Before Love Week starts, everyone draws a name of someone to be secret angel to for Love Week, without revealing their identity.</p>
+        
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp">
+        And we want you to get your company to join in. Warning – this will shift your company culture and you will continue doing this every year. It’s that powerful.</p>
+
+        <h2 class="txt-orange paragraph-head margin-30-mob margin-30 left wow fadeInUp">How Will Love Week Transform Your Company Culture and Boost Your Productivity?</h2>
+            
+        <p class="paragraph-text float-left left wow fadeInUp">
+            Studies have shown that what correlates with happiness at work the most is the social support you receive. But it gets better. A further study finds that providing social support generates greater productivity in the long run.
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Love Week is a culture that enables and encourages the act of receiving and giving social support and appreciation; it’s been the most engaging annual culture in Mindvalley that’s increased productivity and forged stronger friendships among employees in our company.
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            A 2008 Gallup Consulting study concluded that employee engagement is a force that drives business outcomes, and engaged employees are more productive, profitable, customer-focused and safer.
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">    
+            According to Shawn Achor, author of The Happiness Advantage: The Seven Principles of Positive Psychology That Fuel Success and Performance at Work, 95% of people who provide no social support at work have no work engagement. True work altruists [those] are about 10X as likely to be highly engaged.
+        </p>
+         
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">   
+            Tom Rath, the author of the best-selling Vital Friends: The People You Can’t Afford to Live Without, found that people who have a best friend at work are seven times as likely to be engaged in their job.
+        </p>
+
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp">  
+            Another study by Gallup Consulting discovered that 75% of participants who had a best friend at work planned to be with their companies for at least another year.
+        </p> 
+
+        <h1 class="quote-text margin-top-50 float-left left wow fadeInUp">
+            Thank you so much for your amazing idea, we at Talent Dynamics HQ are loving it although we mainly work virtually which has had its challenges. The post has not been over reliable but we are loving it!
+        </h1>
+            
+        <h3 class="quote-text right wow fadeInUp">– Talent Dynamics</h3>
+
+        <h2 class="txt-orange paragraph-head margin-30-mob margin-top-30 left wow fadeInUp">How Does Love Week Work?</h2>
+
+        <p class="paragraph-text float-left margin-top-30 left wow fadeInUp">
+            Everyone adds their names to a hat and then each person draws out a name (at random), regardless of gender or rank. The name you draw is your Human, which makes you their Secret Angel.
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Your duty as a Secret Angel is to show love and appreciation for your Human throughout Love Week in creative, mysterious and secretive ways (check out our tips below). You do this anonymously!
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Follow Mindvalley’s updates on our <a href="https://www.facebook.com/mindvalley" target="_blank">Facebook page</a> and Instagram or Twitter feed at @mindvalley!
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">    
+            Show the world how much love you are spreading. Share photos of your Love Week experience on <a href="https://www.instagram.com/mindvalley" target="_blank">Instagram</a>, <a href="https://www.twitter.com/mindvalley" target="_blank">Twitter</a> and <a href="https://www.facebook.com/mindvalley" target="_blank">Facebook</a> using the hashtag #SpreadLoveWeek.
+        </p>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">    
+            Remember that while you are a Secret Angel, someone else is also being a Secret Angel to you. So you too will be receiving love and appreciation from him or her all week long
+        </p>
+
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp"> 
+            Your identity as a Secret Angel should only be revealed to your Human after Love Week ends. At Mindvalley, for instance, we do this at our weekly team meeting, the Awesomeness Report, the following Tuesday.
+        </p>
+
+        <h2 class="txt-orange paragraph-head margin-30-mob left wow fadeInUp">Our award-winning company culture has been recognised by:</h2>
+
+        <div class=" col l12">
+
+            <div class="team-card col m2 l2 s6 wow fadeInUp">
+                <img src="../imgs/logos/2016_9Years.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 wow fadeInUp" data-wow-delay=".1s">
+                <img src="../imgs/logos/GPTW-Logo-2015.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 wow fadeInUp" data-wow-delay=".4s">
+                <img src="../imgs/logos/BBC-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 wow fadeInUp" data-wow-delay=".5s">
+                <img src="../imgs/logos/THP-logo.png" style="width:100%" data-wow-delay=".6s">
+            </div>
+
+        </div>
+
+
+        <h2 class="txt-orange paragraph-head margin-30-mob left wow fadeInUp">Suggestions and Tips For Your Love Week</h2>
+
+        <img src="../imgs/loveweek-team.jpg" class="margin-top-30 padding-left-40 img-inner above wow fadeInUp">
+
+        <p class="paragraph-text float-left margin-top-30 left wow fadeInUp">
+            <b>1.</b> You don’t have to spend lavish amounts to show your Human love and appreciation! It’s always the thought and effort that count. Surprise them with their favourite coffee or decorate their desk.
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            <b>2.</b> While you can be generous and spend on gifts, Love Week doesn’t require cash! Create a Spotify playlist, send them empowering quotes, set up a temporary Tumblr account dedicated to them or create a customised Pinterest board of their goals and interests.
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            <b>3.</b> Collaborate with other Secret Angels! Send another person to serenade, give a quick massage, deliver a gift, or recite an embarrassing poem or on your behalf.
+        </p>
+        
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">    
+            <b>4.</b> Can’t get your entire company to participate in Love Week? Do it just within your department or with your team.
+        </p>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">    
+            <b>5.</b> Bring Love Week to your community, family or a society/club that you’re part of. Love Week isn’t just for companies and even be done virtually! Just get creative and innovate.
+        </p>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">    
+            <b>6.</b> Turn Love Week into your own personal campaign! Perform random acts of kindness to a stranger, volunteer at a local community or even show the environment some love and plant a tree a day.
+        </p>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">    
+            <b>7.</b> Be your own Secret Angel and make Love Week a week of self-love and appreciation for yourself – head to the spa, take an hour off to golf or treat yourself to that must-have that you’ve been eyeing for a while now.
+        </p>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">    
+            <b>8.</b> Remember to share photos of your Love Week experience on Facebook, Instagram and Twitter all week long using the hashtag #SpreadLoveWeek.
+        </p>
+
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp"> 
+            <b>9.</b> Check out <a href="https://www.facebook.com/media/set/?set=a.981615308532947.1073741835.106523599375460&amp;type=3" target="_blank">Mindvalley’s Love Week 2014 album</a> to see examples of what our Secret Angels were up to last year!
+        </p>
+           
+           </div>
+        </div>
+        
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/culture/love-week by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 13:49:41 GMT -->
+</html>

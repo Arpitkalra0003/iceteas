@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/terms-of-use by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 12:58:45 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<title>Terms of Use</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+    <link rel="stylesheet" href="css/slider-css.css" type="text/css">
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src='js/slider.js'></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+    
+    
+            wow = new WOW(
+            {
+                animateClass:'animated',
+                offset: 30
+            }
+            );
+                wow.init();
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(500);
+            }, 1000);
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1300);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1000);
+    
+    
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html#culture";
+                }
+                    }); 
+            
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html#culture";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-orange">Back</div>
+            
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;">
+           <h1 class="intro-quote quote-text-active left">Terms of Use</h1> 
+
+        <p class="paragraph-text left wow fadeInUp">                 
+            <b>IMPORTANT!</b> These terms of use govern your use of this site, which is provided by our company. by accessing this site, you are indicating your acknowledgment and acceptance of these terms of use. these terms of use are subject to change by our company at any time in its discretion. your use of this site after such changes are implemented constitutes your acknowledgment and acceptance of the changes. Please consult these terms of use regularly.
+        </p>
+            
+
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Access to this site</h2>
+            
+
+        <p class="paragraph-text left wow fadeInUp">            
+        You agree to use this site only for the lawful purposes described in more detail in the “Restrictions on Use” section below. You agree not to take any action that might compromise the security of the site, render the site inaccessible to others or otherwise cause damage to the site or the Content. You agree not to add to, subtract from, or otherwise modify the Content, or to attempt to access any Content that is not intended for you. You agree not to use the Site in any manner that might interfere with the rights of third parties. To access this site or some of the resources it has to offer, you may be asked to provide certain registration details or other information. It is a condition of your use of this site that all the information you provide on this site will be correct, current, and complete. If our Company believes the information you provide is not correct, current, or complete, we have the right to refuse you access to this site or any of its resources, and to terminate or suspend your access at any time, without notice.</p> 
+      
+
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Restrictions on use</h2>
+            
+            <p class="paragraph-text left wow fadeInUp">
+            This site is provided solely for non-commercial, personal use, and/or so that you may learn about our Company and the services we provide . You may not use this site for any other purpose, including any commercial purpose, without our Company’s express prior written consent. For example, you may not (and may not authorize any other party to) (i) co-brand this site, or (ii) frame this site, or (iii) hyper-link to this site, without the express prior written permission of an authorized representative of our Company. For purposes of these Terms of Use, “co-branding” means to display a name, logo, trademark, or other means of attribution or identification of any party in such a manner as is reasonably likely to give a user the impression that such other party has the right to display, publish, or distribute this site or Content accessible within this site. You agree to cooperate with our Company in causing any unauthorized co-branding, framing or hyper-linking immediately to cease.</p>
+
+            <h1 class="intro-quote quote-text-active left">Proprietary information</h1> 
+
+            <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Trademarks</h2>
+            
+
+            <p class="paragraph-text left wow fadeInUp">            
+            The material and Content accessible from this site, and any other World Wide Web site owned, operated, licensed, or controlled by our Company is the proprietary information of our Company or the party that provided the Content to our Company, and our Company or the party that provided the Content to our Company retains all right, title, and interest in the Content. Accordingly, the Content may not be copied, distributed, republished, uploaded, posted, or transmitted in any way without the prior written consent of our Company, or unless authorized in writing elsewhere on our site, except that you may print out a copy of the Content solely for your personal use. You are prohibited from using any of the marks or logos appearing throughout the site without the express written permission of our Company.</p> 
+
+
+           <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Copyrights</h2>
+            
+        <p class="paragraph-text left wow fadeInUp">
+            This site and its Content are protected by U.S. and/or foreign copyright laws, and belong to the Company or its partners, affiliates, contributors or third parties. The copyrights for the Content are owned by the Company or other copyright owners who have authorized their use on this site. You may download and reprint Content for non-commercial, non-public, personal use only (If you are browsing this site as an employee or member of any business or organization, you may download and reprint Content only for educational or other non-commercial purposes within your business or organization, except as otherwise permitted by the Company, for example in certain password-restricted areas of the site). You may not manipulate or alter in any way images or other Content on the site.
+            </p>
+
+            <h2 class="txt-orange paragraph-head margin-top-30 left wow fadeInUp">Hyper-links</h2>
+
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp">
+           This site may be hyper-linked to other sites which are not maintained by, or related to, our Company. The inclusion of any hyper-link to a third-party site does not imply endorsement, sponsorship or recommendation by our Company of that site. Hyper-links to such sites are provided as a service to users and are not sponsored by or affiliated with this site or our Company. Our Company has not reviewed any or all of such sites and is not responsible for the content of those sites. Our Company also makes no representations about the availability of hyper-linked sites. Hyper-links are to be accessed at the user’s own risk, and our Company makes no representations or warranties about the content, completeness or accuracy of these hyper-links or the sites hyper-linked to this site. If you hyper-link to a site, please be aware that you will leave our Company’s web site and will become subject to the rules and conditions of the linked site(s). We recommend that you make yourself aware of the Terms of Use of any sites you link to from our Company’s site.
+            </p>
+
+            <h2 class="txt-orange paragraph-head margin-top-30 left wow fadeInUp">Submissions</h2>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            You hereby grant to our Company the royalty-free, perpetual, irrevocable, worldwide, non-exclusive right and license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, perform, and display all content, remarks, suggestions, ideas, graphics, or other information communicated to our Company through this site (together, hereinafter known as the “Submission”), and to incorporate any Submission in other works in any form, media, or technology now known or later developed. Our Company will not be required to treat any Submission as confidential, and may use any Submission in its business (including without limitation, for products or advertising) without incurring any liability for royalties or any other consideration of any kind, and will not incur any liability as a result of any similarities that may appear in future Company operations. By making a Submission, you are guaranteeing to us that you have the legal right to post the content in the Submission and that it will not violate any law or the rights of any person or entity.</p>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Our Company will treat any personal information that you submit through this site in accordance with its <a href="privacy-policy" target="_blank">Privacy Policy</a> as set forth on this site.
+        </p>
+
+            <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Child safety</h2>
+
+        <p class="paragraph-text left wow fadeInUp">
+            Protecting the online privacy of children is especially important to us, and those under the age of 13 are protected by federal law. For that reason, our Company does not knowingly permit children under the age of 13 to become registered members of our sites, or to buy goods and services on our sites, without verifiable parental consent. Our Company does not knowingly collect or solicit personal information about children under 13, except with their parent’s express consent.
+            </p>
+
+        <p class="paragraph-text margin-top-30 left wow fadeInUp">
+            If we ever include children under the age of 13 as part of our intended site audience, those specific web pages will, in accordance with the provisions of the Children’s Online Privacy Protection Act (COPPA), be clearly identified and provide an explicit privacy notice; and we will provide processes to obtain parental approval, provide access to information and allow parents to request removal of their children’s personal information.
+            </p>
+
+            <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Downloading material</h2>
+
+        <p class="paragraph-text left wow fadeInUp">
+            You understand that our Company cannot and does not guarantee or warrant that files available for downloading from the Internet will be free of viruses, worms, Trojan horses or other code that may manifest contaminating or destructive properties. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for accuracy of data input and output, and for maintaining a means external to this site for the reconstruction of any lost data. Our Company does not assume any responsibility or risk for your use of the Internet.
+            </p>
+
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Disclaimer</h2>
+   
+        <p class="paragraph-text float-left left wow fadeInUp">
+           The company makes no express or implied warranties, representations or endorsements whatsoever with respect to the site, the service or the content. the company expressly disclaims all warranties of any kind, express, implied, statutory or otherwise, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, with regard to the site, the service, the content, and any product or service furnished or to be furnished via the site. the company does not warrant that the functions performed by the site or the service will be uninterrupted, timely, secure or error-free, or that defects in the site or the service will be corrected. the company does not warrant the accuracy or completeness of the content, or that any errors in the content will be corrected. the site, the service and the content are provided on an “as is” and “as available” basis.
+            </p>
+           
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Limitation on liability</h2>
+   
+        <p class="paragraph-text float-left left wow fadeInUp">
+           Company, its subsidiaries, affiliates, licensors, service providers, content providers, employees, agents, officers, and directors will not be liable for any incidental, direct, indirect, punitive, actual, consequential, special, exemplary, or other damages, including loss of revenue or income, pain and suffering, emotional distress, or similar damages, even if company has been advised of the possibility of such damages. in no event will the collective liability of company and its subsidiaries, affiliates, licensors, service providers, content providers, employees, agents, officers, and directors, to any party (regardless of the form of action, whether in contract, tort, or otherwise) exceed the greater of $100 or the amount you have paid to company for the applicable content, product or service out of which liability.
+            </p>
+
+        <h2 class="txt-orange paragraph-head margin-30 left wow fadeInUp">Indemnity</h2>
+   
+        <p class="paragraph-text float-left left wow fadeInUp">
+           You will indemnify and hold Company, its subsidiaries, affiliates, licensors, content providers, service providers, employees, agents, officers, directors, and contractors (hereinafter known as the “Indemnified Parties”) harmless from any breach of these Terms of Use by you, including any use of Content other than as expressly authorized in these Terms of Use. You agree that the Indemnified Parties will have no liability in connection with any such breach or unauthorized use, and you agree to indemnify any and all resulting loss, damages, judgments, awards, costs, expenses, and attorney’s fees of the Indemnified Parties in connection therewith. You will also indemnify and hold the Indemnified Parties harmless from and against any claims brought by third parties arising out of your use of the information accessed from this site.
+        </p>
+            
+            <h2 class="txt-orange paragraph-head margin-top-30 left wow fadeInUp">Information you provide</h2>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            You may not post, send, submit, publish, or transmit in connection with this site any material that:</p>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            <b>1.</b> You do not have the right to post, including proprietary material of any third party
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>2.</b> Advocates illegal activity or discusses an intent to commit an illegal act
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>3.</b> Is vulgar, obscene, pornographic, or indecent
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>4.</b> Does not pertain directly to this site
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>5.</b> Threatens or abuses others, libels, defames, invades privacy, stalks, is obscene, pornographic, racist, abusive, harassing, threatening or offensive
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>6.</b> Seeks to exploit or harm children by exposing them to inappropriate content, asking for personally identifiable details or otherwise
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>7.</b> Infringes any intellectual property or other right of any entity or person, including violating anyone’s copyrights or trademarks or their rights of publicity
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>8.</b> Violates any law or may be considered to violate any law
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>9.</b> Impersonates or misrepresents your connection to any other entity or person or otherwise manipulates headers or identifiers to disguise the origin of the content
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>10.</b> Advertises any commercial endeavor (e.g., offering for sale products or services) or otherwise engages in any commercial activity (e.g., conducting raffles or contests, displaying sponsorship banners, and/or soliciting goods or services) except as may be specifically authorized on this site
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>11.</b> Solicits funds, advertisers or sponsors
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>12.</b> Includes programs which contain viruses, worms and/or Trojan horses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>13.</b> Disrupts the normal flow of dialogue, causes a screen to scroll faster than other users are able to type, or otherwise act in a way which affects the ability of other people to engage in real time activities via this site
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>14.</b> Includes MP3 format files
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>15.</b> Amounts to a ‘pyramid’ or similar scheme
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>16.</b> Disobeys any policy or regulations established from time to time regarding use of this site or any networks connected to this site
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            <b>17.</b> Contains hyper-links to other sites that contain content that falls within the descriptions set forth above
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            Although under no obligation to do so, our Company reserves the right to monitor use of this site to determine compliance with these Terms of Use, as well as the right to remove or refuse any information for any reason. Notwithstanding these rights, you remain solely responsible for the content of your Submissions. You acknowledge and agree that neither Company nor any third party that provides Content to Company will assume or have any liability for any action or inaction by Company or such third party with respect to any Submission.
+        </p>
+
+        <h2 class="txt-orange paragraph-head margin-top-30 left wow fadeInUp">Security</h2>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Any passwords used for this site are for individual use only. You will be responsible for the security of your password (if any). Company will be entitled to monitor your password and, at its discretion, require you to change it. If you use a password that Company considers insecure, Company will be entitled to require the password to be changed and/or terminate your account.</p>
+
+        <p class="paragraph-text margin-30 float-left left wow fadeInUp">
+            You are prohibited from using any services or facilities provided in connection with this site to compromise security or tamper with system resources and/or accounts. The use or distribution of tools designed for compromising security (e.g., password guessing programs, cracking tools or network probing tools) is strictly prohibited. If you become involved in any violation of system security, Company reserves the right to release your details to system administrators at other sites in order to assist them in resolving security incidents. Company reserves the right to investigate suspected violations of these Terms of Use.
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            Company reserves the right to fully cooperate with any law enforcement authorities or court order requesting or directing Company to disclose the identity of anyone posting any e-mail messages, or publishing or otherwise making available any materials that are believed to violate these Terms of Use.
+        </p>
+
+        <p class="paragraph-text float-left left wow fadeInUp">
+            By accepting this agreement you waive and hold harmless company from any claims resulting from any action taken by company during or as a result of its investigations and/or from any actions taken as a consequence of investigations by either the company or law enforcement authorities.
+        </p>
+
+        <h2 class="txt-orange paragraph-head margin-top-30 left wow fadeInUp">Claims of copyright infringement</h2>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+            Pursuant to <a href="http://www.copyright.gov/title17/" target="_blank">Title 17, United States Code</a>, <a href="http://www.copyright.gov/title17/92chap5.html#512" target="_blank">Section 512©</a>, notifications of claimed copyright infringement should be sent to Service Provider’s Designated Agent.</p>
+
+        <h2 class="txt-orange paragraph-head margin-top-30 left wow fadeInUp">Miscellaneous</h2>
+
+        <p class="paragraph-text margin-top-30 float-left left wow fadeInUp">
+           These Terms of Use will be governed and interpreted pursuant to the laws of California, United States of America, notwithstanding any principles of conflicts of law. You specifically consent to personal jurisdiction in Californian connection with any dispute between you and Company arising out of these Terms of Use or pertaining to the subject matter hereof. The parties to these Terms of Use each agree that the exclusive venue for any dispute between the parties arising out of these Terms of Use or pertaining to the subject matter of these Terms of Use will be in the state and/or federal courts in Marin County, California. If any part of these Terms of Use is unlawful, void or unenforceable, that part will be deemed severable and will not affect the validity and enforceability of any remaining provisions. These Terms of Use constitute the entire agreement among the parties relating to this subject matter. Notwithstanding the foregoing, any additional terms and conditions on this site will govern the items to which they pertain. Company may revise these Terms of Use at any time by updating this posting.</p>
+
+
+           </div>
+        </div>
+
+        
+        	<script>
+		window.sliderInit = (function (window, document, undefined) {
+
+			'use strict';
+
+			// Feature Test
+			if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+
+				// SELECTORS
+				var sliders = document.querySelectorAll('[data-slider]');
+				var mySwipe = Array;
+
+
+				// EVENTS, LISTENERS, AND INITS
+
+				// Add class to HTML element to activate conditional CSS
+				document.documentElement.className += ' js-slider';
+
+				// Activate all sliders
+				Array.prototype.forEach.call(sliders, function (slider, index) {
+
+					// SELECTORS
+
+					var slideCount = slider.querySelector('[data-slider-count]'); // Slider count wrapper
+					var slideNav = slider.querySelector('[data-slider-nav]'); // Slider nav wrapper
+
+
+					// METHODS
+
+					// Display count of slides
+					var createSlideCount = function () {
+						// Variables
+						var slideTotal = mySwipe[index].getNumSlides();
+						var slideCurrent = mySwipe[index].getPos();
+
+						// Content
+						if ( slideCount !== null ) {
+							slideCount.innerHTML = slideCurrent + ' of ' + slideTotal;
+						}
+					};
+
+					// Display Slider navigation
+					var createNavButtons = function () {
+						if ( slideNav !== null ) {
+							slideNav.innerHTML = '<a data-slider-nav-prev href="#">Previous</a> | <a data-slider-nav-next href="#">Next</a>';
+						}
+					};
+
+					// Stop YouTube and Vimeo videos from playing when leaving the slide
+					var stopVideo = function () {
+						var currentSlide = mySwipe[index].getPos() - 1;
+						var iframe = slider.querySelector( '[data-index="' + currentSlide + '"] iframe');
+						var video = slider.querySelector( '[data-index="' + currentSlide + '"] video' );
+						if ( iframe !== null ) {
+							var iframeSrc = iframe.src;
+							iframe.src = iframeSrc;
+						}
+						if ( video !== null ) {
+							video.pause();
+						}
+					};
+
+					// Handle next button
+					var handleNextBtn = function (event) {
+						event.preventDefault();
+						stopVideo();
+						mySwipe[index].next();
+					};
+
+					// Handle previous button
+					var handlePrevBtn = function (event) {
+						event.preventDefault();
+						stopVideo();
+						mySwipe[index].prev();
+					};
+
+					// Handle keypress
+					var handleKeypress = function (event) {
+						if ( event.keyCode == 37 ) {
+							mySwipe[index].prev();
+						}
+						if ( event.keyCode == 39) {
+							mySwipe[index].next();
+						}
+					};
+
+
+					// EVENTS, LISTENERS, AND INITS
+
+					// Activate Slider
+					mySwipe[index] = Swipe(slider, {
+						speed: 800,
+						auto: 3000,
+						continuous: true,
+						callback: function(index, elem) {
+							createSlideCount(); // Update with new position on slide change
+						}
+					});
+
+					// Create slide count and nav
+					createSlideCount();
+					createNavButtons();
+					var btnNext = slider.querySelector('[data-slider-nav-next]'); // Next slide button
+					var btnPrev = slider.querySelector('[data-slider-nav-prev]'); // Previous slide button
+
+					// Toggle Previous & Next Buttons
+					if ( btnNext ) {
+						btnNext.addEventListener('click', handleNextBtn, false);
+					}
+					if ( btnPrev ) {
+						btnPrev.addEventListener('click', handlePrevBtn, false);
+					}
+
+					// Toggle Left & Right Keypress
+					window.addEventListener('keydown', handleKeypress, false);
+
+				});
+
+			}
+
+		})(window, document);
+	</script>
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/terms-of-use by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 12:58:45 GMT -->
+</html>
