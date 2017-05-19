@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.mindvalley.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:03:26 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+	<title>About ICETEAS</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+    
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                var preload = $('#preloader');
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(300);
+            }, 1200);
+    
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1000);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
+            }, 1500);
+    
+    
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html";
+                }
+                    });  
+    
+            
+            $('.back-orange').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index-2.html";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+      
+
+        
+        <div class="back-orange">Back</div>
+            
+        <div class="top-menu">
+            <div class="logo-body orange">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;">
+            
+        <h1 class="intro-quote quote-text-active left">About ICETEAS</h1>              
+
+           
+        <!-- <h2 class="txt-orange paragraph-head left  ">About ICETEAS</h2> --> 
+              <!-- <img src="imgs/mva-1600x800.jpg" class="padding-left-40 img-inner margin-30 above"> -->
+           
+        <p class="paragraph-text left float-left margin-top-30  ">
+            This conference will provide an international forum for the dissemination of original research results, new ideas and practical development experience which concentrate on both theory and practices. Conference may concern any topic within its scope. The conference is devoted to increase the understanding role of soft computing in engineering that has day by day evolved to prepare human friendly technology. The conference will provide a platform for bringing forth significant research and literature across the field of Soft Computing and provide an overview of the technologies waiting unveiling.<b> This interaction will be the focal point for leading experts to share their insights, provide guidance and address participant’s questions and concerns.</b></p>
+            
+
+               <h1 class="intro-quote quote-text-active left">Objective</h1>  
+			`	  <img src="imgs/target.png" class="padding-left-40 img-inner margin-30 above">
+            
+           <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/ZgNzGQmOhSM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  class="padding-left-40 margin-30  above video-inner aff-video-left  " style="z-index:10;"> -->
+           <!-- </iframe>                -->
+            
+        <p class="paragraph-text float-left left  ">
+            The conference is anticipated to attract a large number of high quality submissions and stimulate the cutting-edge research discussions among many academic pioneering researchers, scientists, industrial engineers, students from all around the world and provide a forum to researcher. Propose new technologies, share their experiences and discuss future solutions for design infrastructure. Provide common platform for academic pioneering researchers, scientists, engineers and students to share their views and achievements. Enrich technocrats and academicians by presenting their innovative and constructive ideas.<b> Focus on innovative issues at international level by bringing together the experts from different countries.</b>
+
+
+                </p> 
+             
+               <h1 class="intro-quote quote-text-active left">About JECRC</h1>  
+       
+            
+            <!-- <img src="imgs/culture.jpg" class="padding-left-40 img-inner above  "> -->
+            
+        <p class="paragraph-text left margin-top-30  ">
+            <b>The JECRC Foundation</b>, established in the year 2000, conducts UG, PG and Ph.D. programs in several disciplines. Today it has three institutions duly approved by the UGC and AICTE, Government of India and the student strength exceeds 10000. The Foundation has an active collaboration with several industries. Our alumni have been placed in industries of repute and have also been pursuing higher studies at prestigious universities. It enjoys an enviable patronage so much so that it has become the most sought-after for students with a variety of academic pursuits. India is permanent signatory of Washington Accord (National Board of Accreditation) to provide outcome based education, by this conference JECRC will provide the insight into the lifelong learning aspect for researchers, students and faculty members.
+        </p> 
+            
+            
+         <!-- <a href="team.html" class="inner-link margin-top-30  " data-wipe="Meet the Tribe">Meet the Tribe </a> -->
+            
+            
+               <h1 class="intro-quote quote-text-active left">Our Vision</h1>  
+      
+            
+            <!-- <img src="imgs/Meeting-in-HoA_1.jpg" class="padding-left-40 img-inner above  "> -->
+            
+        <p class="paragraph-text left margin-top-30  ">
+           To become a renowned centre of outcome based learning, and work towards academic, professional, cultural and social enrichment of the lives of individuals and communities. <br><br>
+            <b>Mission:</b> <br>
+			 • Focus on evaluation of learning outcomes and motivate students to inculcate research aptitude by project based learning.<br>
+• Identify, based on informed perception of Indian, regional and global needs, areas of focus and provide platform to gain knowledge and solutions.<br> 
+• Offer opportunities for interaction between academia and industry.<br>
+• Develop human potential to its fullest extent so that intellectually capable and imaginatively gifted leaders can emerge in a range of professions.<br>
+        </p> 
+            
+        <p class="paragraph-text left margin-top-30  ">
+            <b>We’ve won numerous accolades: </b><br><br>
+			<b>Students Triumph</b><br>
+The students of the Foundation zealously participate in various co-curricular activities, organised at the national and international levels. They have participated in numerous events organised by institutes of national repute and won laurels for our institutes. <br>
+• The nukkad natak team of JECRC attained first position in the Jaipur Theatre Festival, Jairangam among teams from 45 colleges of the country.<br>
+
+• Priyanka Rahar, 4th Year, ECE, Batch 2015 was among the 3 women from Rajasthan selected as Flying Officer in Indian Air Force.<br>
+
+• Our students, Anshul Patni & Akshay Sharma were national winners of mobile technology innovation challenge in Amaethon 2016, the largest food and agro business summit in Asia Pacific held at IIM Ahmedabad in January 2016.<br>
+
+• Thirteen of our students selected as TCS Student Ambassadors were invited at TCS Headquarters, Noida for an orientation session in January 2016.<br>
+
+• Books titled "C-Programming" and "Information Security Systems" were authored by Prof. Gajendra Sharma of Computer Science Department.<br>
+
+• A Research Paper by Piyush Menghani, Computer Science and Saurabh Barthwal, Electronics & Communication titled "An Advance System for Emergency Vehicles based on M2M Communication" has been accepted in IEEE's International Conference on Electronics and Communication Systems held in Coimbatore in February 2016.<br>
+
+• The robotics team of JECRC stood 3rd in the Robowar event of Techniche, the technical fest of IIT Guwahati held in September 2015.<br>
+
+• The JECRC team was among the top 15 teams of the country in the Maze Runner contest at the Techfest of IIT Bombay organized in December 2015.<br>
+
+• Akshay Sharma, 3rd year, Electronics & Communication, participated in Udaipur Start Up fest in "Social Enterprise Track" organized by CIIE (IIM Ahmedabad), RIICO and Start up Oasis at Udaipur during the month of February 2016 and was the 1st runner up.<br>
+
+• Among 400 participating institutions that included IITs & NITs, JECRC had 38, the highest number of students selected as the Microsoft Student Partners from any single organization.<br>
+
+• Two students of JECRC, Ankita Makwana of IT & Shilpa Swamy of Mechanical attained 2nd position in the RTU Merit List 2015 and were invited for the Convocation Ceremony.<br>
+
+• Bhawna Rajora from Electrical attained 3rd position in the RTU Merit List 2015 and was invited for the Convocation Ceremony.<br>
+
+• A team of students from JECRC was selected among the top 12 entries in the Ideate-National Level Business Plan competition in Rajasthan startup Fest organized by Rajasthan Government.<br>
+
+• Prof. K. S. Raghuvanshi has been invited as a reviewer in various International conferences to be organized in U.S. U.K., Japan, Lebanon & Poland in the year 2016-17.<br>
+
+• Mr. Bhuvnesh Bhardwaj, Ass. Prof. Mechanical has filed a patent on "apparatus and method for cleaning inner surface of hollow object" (file no. 4307/DEL/2015).<br>
+
+• Ankit Bhardwaj from Mechanical was selected for a forty five days summer internship at the Sultan Qaboos University, Oman from 19 June to 07 Aug. 2015.<br>
+
+• An independent film "The Head of the Mouse", directed by Aditya J Patwardhan, a 2011 batch pass out of IT branch has won awards for best film and best cinematography at the Los Angeles Independent film Festival.<br>
+
+• A team of 10 students participated in the final round of SAE-Effiyan competition at LPU, Jalandhar during 15-17 October 2015 and stood 17th among 111 teams registered from all across the country.<br>
+
+• Subhash Rao batch 2015 student of Electronics & Communication successfully completed Naval Orientation Course at Indian Naval Academy and is currently serving in Indian Coast Guard as Asst. Commandant.<br>
+
+
+        </p>
+            
+            
+            <div class="team-card col m2 l2 s6 margin-30  ">
+                <img src="imgs/logos/2016_9Years.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".1s">
+                <img src="imgs/logos/GPTW-Logo-2015.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".2s">
+                <img src="imgs/logos/Forbes-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".3s">
+                <img src="imgs/logos/Inc.-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".4s">
+                <img src="imgs/logos/BBC-Logo.png" style="width:100%">
+            </div>
+            
+            <div class="team-card col m2 l2 s6 margin-30  " data--delay=".5s">
+                <img src="imgs/logos/THP-logo.png" style="width:100%" data--delay=".6s">
+            </div>
+        
+    
+            
+            <p class="paragraph-text left margin-top-30  ">
+                Our secret? Focusing on happiness, growth, abundance and cultivating our mutual mission for positive impact. Our founder, Vishen Lakhiani, explains the <a href="https://www.youtube.com/watch?v=X1dmVox38_w" target="_blank">science of hacking and transforming work culture</a> in his keynote at the 925 Festival of Work in Helsinki, Finland.<br><br>
+                How else would we be able to manage 200 world-class employees from over 40 different countries and backgrounds in one office?
+            </p>
+            
+            
+         <!-- <a href="culture.html" class="inner-link margin-top-30  " data-wipe="Our Culture">Our Culture </a> -->
+
+                   
+           <p class="paragraph-text margin-30 mob-none txt-white float-left left">.</p>
+
+           
+           </div>
+        </div>
+        
+
+    </body>
+
+<!-- Mirrored from www.mindvalley.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 May 2017 11:04:14 GMT -->
+</html>

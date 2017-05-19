@@ -15,12 +15,12 @@ a{-webkit-tap-highlight-color:transparent;background-color:transparent; text-dec
 a:hover{text-decoration: underline;}
 a:active,a:hover{outline:0}
 abbr[title]{border-bottom:1px dotted}
-b,strong{font-weight:400}
+b,strong{font-weight:300}
 dfn{font-style:italic}
 mark{background:#ff0;color:#000}
 sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sup{top:-0.5em} sub{bottom:-0.25em}
-img{border:0} svg:not(:root){overflow:hidden} figure{margin:1em 40px}
+img{  border:0;} svg:not(:root){overflow:hidden} figure{margin:1em 40px}
 hr{-moz-box-sizing:content-box;box-sizing:content-box}
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
 button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
@@ -37,7 +37,7 @@ legend{border:0;padding:0}
 pre,textarea{overflow:auto}
 optgroup{font-weight:bold}
 /* End extract from normalize.css */
-html,body{font-family: 'Roboto', sans-serif;font-size:15px;line-height:1.5; font-weight: 100}
+html,body{font-family: 'Roboto', sans-serif;font-size:15px;line-height:1.5; font-weight: 100; }
 h1,h2,h3,h4,h5,h6{font-weight: 100;font-family: 'Roboto', sans-serif;margin:0;letter-spacing: 0px;}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
@@ -101,7 +101,7 @@ a{color:inherit}
 .margin-50{margin:50px 0 !important}
 
 .center{text-align: center !important}
-.left{text-align: left !important}
+/* .left{text-align: left !important} */
 .right{text-align: right !important}
 .circle{border-radius:50% !important}
 .fixed{position: fixed !important}
@@ -114,7 +114,7 @@ a{color:inherit}
 .mobile-break {display: none;}
 
 
-.container{margin:0 auto;}
+.container{margin:0 auto;background-color: #ffffff;}
 
 
     @font-face {
@@ -146,10 +146,10 @@ a{color:inherit}
 #preloader {
   position: fixed;
   overflow: hidden;
-  background: url(../imgs/mv_preloader.svg) center/contain no-repeat;
-  height: 44px;
-  width: 200px;
-  margin: -22px -100px -22px -100px;
+  background: url(../imgs/logos.png) center/contain no-repeat;
+  height: 150px;
+  width: 600px;
+  margin: -70px -100px -22px -290px;
   top: 50%;
   left:50%;
   z-index: 999;
@@ -176,8 +176,8 @@ a{color:inherit}
 *--------------------------------------------------*/ 
 
 
-.orange{background-color:#ffce00;}
-.txt-orange{color:#ffce00 !important;}
+.orange{background-color:#f79719;}
+.txt-orange{color:#f79719 !important;}
 .txt-gray{color:#8b8b8b !important;}
 .txt-white{color:#fff !important;}
 
@@ -199,7 +199,7 @@ a{color:inherit}
 
 .team-card h2:after{
     content: '';
-    border-bottom: 2px solid #ffce00;
+    border-bottom: 2px solid #f79719;
     display:block;
     width: 10%;
     position: relative;
@@ -297,66 +297,18 @@ a{color:inherit}
 /*  Back, logo, etc
 *-------------------------------------------------*/
 
-.back-orange {
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 800;
-    font-size: 16px!important;
-    text-transform: uppercase;
-    position: fixed;
-    left:150px;
-    top:47px;
-    z-index: 10;
-    width: 70px;
-    color:#fecc00;
-    cursor: pointer;
-    -ms-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-}
-
-.back-orange:before {
-    content: '';
-    width: 16px;
-    height: 2px;
-    left: -20px;
-    top: 13px;
-    display: block;
-    position: relative;
-    background-color:#fecc00;
-    -ms-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-}
-
-.back-orange:hover:before {
-    width: 0px;
-    left: 0px;
-    -ms-transition: all 0.4s cubic-bezier(0.7, 0.01, 0.3, 1);
-    -webkit-transition: all 0.4s cubic-bezier(0.7, 0.01, 0.3, 1);
-    transition: all 0.4s cubic-bezier(0.7, 0.01, 0.3, 1);
-}
-
-
-.back-orange:hover {
-    left:130px;
-    top:47px;
-    cursor: pointer;
-    -ms-transition: all 0.4s cubic-bezier(0.7, 0.01, 0.3, 1);
-    -webkit-transition: all 0.4s cubic-bezier(0.7, 0.01, 0.3, 1);
-    transition: all 0.4s cubic-bezier(0.7, 0.01, 0.3, 1);
-}
-
-
-
 .logo-body { 
     position: fixed;
     border-radius: 30px;
     width: 60px;
     height: 60px;
-    top: 30px;
+    top: 15px;
     left: 60px;
-    transform: scale(0, 0);
+    transform: scale(1, 1);
     z-index: 103;
+    -moz-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .logo-body:hover { 
@@ -364,11 +316,11 @@ a{color:inherit}
     border-radius: 30px;
     width: 60px;
     height: 60px;
-    top: 30px;
+    top: 15px;
     left: 60px;
     transform: scale(1.1, 1.1);
     z-index: 103;
-    -ms-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -moz-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
     -webkit-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
     transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
@@ -381,8 +333,10 @@ a{color:inherit}
     top: 30px;
     left: 60px;
     transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
     z-index: 103;
-    -ms-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -moz-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
     -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
     transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
@@ -390,58 +344,62 @@ a{color:inherit}
 .logo-body:before{
     content: '';
     display: block;
-    background-image: url(../imgs/mindvalley.svg);
-    width: 38px;
-    height: 17px;
+    background-image: url(../imgs/misc/home-outline.svg);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
     position: relative;
-    top: 23px;
+    top: 17px;
+	left:17px;
     padding: 0;
     margin: 0 auto;
     transform: scale(1, 1);
-    -ms-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -moz-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
     -webkit-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
     transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
-    background-repeat: no-repeat;
 }
 
 .logo-body:hover:before{
     content: '';
     display: block;
-    background-image: url(../imgs/mindvalley.svg);
-    width: 38px;
-    height: 17px;
+ background-image: url(../imgs/misc/home-outline.svg);
+    width: 60px;
+    height: 60px;
     position: relative;
-    top: 23px;
+    top: 17px;
+	left:17px;
     padding: 0;
     margin: 0 auto;
-    transform: scale(0.7, 0.7);
-    -ms-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -moz-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
     -webkit-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
     transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+
 }
 
 .logo-body:active:before{
     content: '';
     display: block;
-    background-image: url(../imgs/mindvalley.svg);
-    width: 38px;
-    height: 17px;
+ background-image: url(../imgs/misc/home-outline.svg);
+    width: 60px;
+    height: 60px;
     position: relative;
-    top: 23px;
+    top: 17px;
+	left:17px;
     padding: 0;
     margin: 0 auto;
-    transform: scale(1.1, 1.1);
-    -ms-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
-    -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
-    transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -moz-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.logo-body-active { 
-    transform: scale(1, 1);
-    -ms-transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
-    -webkit-transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
-    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
-}
 
 
 
@@ -513,7 +471,7 @@ a{color:inherit}
 /*   Inner Pages
 *-------------------------------------------------*/
 
-.img-inner{width:900px}
+.img-inner{width:700px}
 .img-inner-small{width:350px;display:block;margin:0 auto}
 .img-inner-tiny{width:175px;display:block;margin:0 auto}
 .img-inner-quote{width:450px;display:block;margin:0 auto}
@@ -551,13 +509,13 @@ a{color:inherit}
 .intro-quote{
         position: relative;
         font-family: 'Gilroy', sans-serif;
-        font-weight: 800;
+        font-weight: 600;
         color: #333333;
-        letter-spacing: -4px;
+        letter-spacing: -2px;
         left: 0;
-        font-size: 90px;
+        font-size: 40px;
         line-height: 105px;
-        margin: 120px 0 20px 0;
+        margin: 120px 0 -30px 35px;
         width: 100%;
         background-color: transparent;
         z-index: 2;
@@ -630,13 +588,14 @@ h3.quote-text{
 
 .paragraph-text {
         position: relative;
-        font-family: 'Lato', sans-serif;
+        font-family: "Khula",sans-serif;
         font-weight: 300;
-        color: #333333;
+		text-align:justify;	
+        color: blak;
         left: 0;
-        font-size: 1.5em;
+        font-size: 1.2rem;
         line-height: 1.55;
-        background-color: white;
+        /* background-color: white; */
         padding: 0 0 0 40px;
         margin: 0;
         clear: both;
@@ -671,13 +630,13 @@ h3.quote-text{
 .paragraph-head {
         position: relative;
         font-family: 'Lato', sans-serif;
-        font-weight: 400;
+        font-weight: 600;
         color: #333333;
-        left: 0;
-        font-size: 1.7em;
+        left: 5%;
+        font-size: 2.5rem;
         line-height: 1.55;
         display: inline-block;
-        background-color: white;
+        /* background-color: white; */
         padding: 20px 0 0 6px;
         margin: 0;
         clear: both;
@@ -784,4 +743,11 @@ h3.quote-text{
   text-indent: 0;
   transition: 0s 0.3s ease-in-out;
 
+}
+.head{
+	font-size: 1.7rem;
+	margin:10px 0px 0px 40px;	
+	font-family:"Khula",sans-serif;
+	color:#f79719;
+	
 }
